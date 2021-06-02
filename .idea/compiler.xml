@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Agency" />
+        <module name="KP_JAVA" />
       </profile>
     </annotationProcessing>
   </component>

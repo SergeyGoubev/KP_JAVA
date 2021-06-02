@@ -1,13 +1,7 @@
 package Agency.Controllers;
 
-import Agency.DAO.CategoryDAO;
-import Agency.DAO.CommentRatingDAO;
-import Agency.DAO.GuestsDAO;
-import Agency.DAO.UserDAO;
-import Agency.Models.Category;
-import Agency.Models.CommentRating;
-import Agency.Models.Guests;
-import Agency.Models.User;
+import Agency.DAO.*;
+import Agency.Models.*;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,11 +11,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Controller
@@ -41,6 +37,9 @@ public class UserController {
 
     @Autowired
     CommentRatingDAO commentRatingDao;
+
+    @Autowired
+    MessageDao messageDao;
 
     @ModelAttribute("userJSP")
     public User createUser() {
@@ -223,6 +222,24 @@ public class UserController {
     @RequestMapping("/error")   //возврат страницы с ошибкой
     public String viewUsers(){
         return "Error";
+    }
+
+    @RequestMapping("/messages/{id}")
+    public ModelAndView messages(@PathVariable("id") int id) {
+        ModelAndView modelAndView = new ModelAndView("messages");
+        List<Message> messages = messageDao.getAllMessagesOfOrganizator(id);
+        modelAndView.addObject("list", messages);
+        Message newMessage = new Message();
+        newMessage.setUserId(id);
+        modelAndView.addObject("message", newMessage);
+        return modelAndView;
+    }
+
+    @RequestMapping("/send")
+    public ModelAndView send(@RequestBody @ModelAttribute("message") Message message) {
+        message.setData(LocalDateTime.now());
+        messageDao.add(message);
+        return new ModelAndView("redirect:messages/" + message.getUserId());
     }
 }
 
