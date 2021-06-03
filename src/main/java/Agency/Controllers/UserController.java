@@ -186,7 +186,7 @@ public class UserController {
     @RequestMapping(value="/verifyUser")  //проверка пользователя при входе
     public String verifyUser(@ModelAttribute("command") User user, Model m){
         User foundedUser=userDao.verifyUser(user);    //Выполнение метода verifyUser
-        logger.info("Выполнение метода verifyUSer " + user.getLogin());
+        logger.info("Выполнение метода verifyUser " + user.getLogin());
         if (foundedUser==null) return "redirect:/Error";
         m.addAttribute("userJSP", foundedUser);
         if (foundedUser.getTypeOfUser()==1) return "redirect:/userIndex";   //вход в зависимости от типа пользователя
