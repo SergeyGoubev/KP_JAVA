@@ -46,40 +46,31 @@
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="Hosts/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/10">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Services/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Services/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/5">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/6">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="Hosts/8">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/11">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/12">Постановка танца</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/7">Шоу программа для взрослых</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Шоу-программы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Services/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Services/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/9">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/13">Отели</a></li>
-                    <li class="nav-item"><a class="nav-link">Моё</a>
+                    <li class="nav-item"><a class="nav-link" href="Services/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services/9">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
+                            <li class="nav-item"><a class="nav-link" href="messages/${user.organizatorId}">Сообщения</a></li>
                             <li class="nav-item"><a class="nav-link" href="guests">Список гостей</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Учёт расходов</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <form class="d-flex" action="index">
-                    <button class="btn btn-outline-success">Выход</button>
-                </form>
-                <form class="d-flex" action="pageUserInfo">
-                    <button class="btn btn-outline-success">${userJSP.name} ${userJSP.surname}</button>
-                </form>
             </div>
         </div>
     </nav>

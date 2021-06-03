@@ -46,27 +46,28 @@
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/10">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/5">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/6">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/8">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/11">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/12">Постановка танца</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/7">Шоу программа для взрослых</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../error">Шоу-программы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/9">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/13">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="entry">Вход</a></li>
-                            <li class="nav-item"><a class="nav-link" href="userRegistration">Регистрация клиента</a></li>
-                            <li class="nav-item"><a class="nav-link" href="organizatorRegistration">Регистрация организатора</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../messages/${user.organizatorId}">Сообщения</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../guests">Список гостей</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../error">Учёт расходов</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../error">Мои заказы</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,39 +77,6 @@
 </header>
 
 <main>
-
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Праздники у Алекса</h1>
-                        <p>Мы являемся единственным агентством в городе Владимир,
-                            с помощью которого вы сможете подготовиться к одному из самых значимых дней в вашей жизни
-                            максимально быстро и просто. Вы сможете просмотреть анкеты ведущих, фотографов и других
-                            помощников в организации праздники, общаться с ними напрямую. Сможете подобрать шоу-программу
-                            и даже заказать торт.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
     <div class="container marketing">
 
         <c:choose>

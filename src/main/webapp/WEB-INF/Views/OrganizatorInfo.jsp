@@ -49,27 +49,25 @@
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/10">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/5">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/6">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/8">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/11">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/12">Постановка танца</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Hosts/7">Шоу программа для взрослых</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../error">Шоу-программы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Services/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/9">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Hosts/13">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="entry">Вход</a></li>
-                            <li class="nav-item"><a class="nav-link" href="userRegistration">Регистрация клиента</a></li>
-                            <li class="nav-item"><a class="nav-link" href="organizatorRegistration">Регистрация организатора</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../messages/${user.organizatorId}">Сообщения</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -219,6 +219,15 @@ public class UserController {
         else return "redirect:/Error";
     }
 
+
+    /* @RequestMapping(value="/services")     //просмотр списка гостей
+    public String services (@ModelAttribute("userJSP")  Model m){
+        List<Services> list = ServicesDAO.getAllServices();
+        m.addAttribute("list",list);
+        return "Services";
+    }
+     */
+
     @RequestMapping("/error")   //возврат страницы с ошибкой
     public String viewUsers(){
         return "Error";
