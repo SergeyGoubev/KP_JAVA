@@ -41,7 +41,7 @@
         <property name="template" ref="jt"></property>
     </bean>
 
-    <bean id="messageDao" class="Agency.DAO.MessageDao">
+    <bean id="messageDao" class="Agency.DAO.MessageDAO">
         <property name="template" ref="jt"></property>
     </bean>
     <bean id="multipartResolver"

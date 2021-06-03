@@ -1,11 +1,13 @@
 package Agency.Models;
 
-public class Guests {
+import java.time.LocalDateTime;
+
+public class  Services {
     private int id;
     private int userId;
     private String name;
-    private String surname;
-    private String comment;
+    private String description;
+    private int cost;
 
 
     public int getId() {
@@ -32,19 +34,19 @@ public class Guests {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getDescription() {
+        return description;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getComment() {
-        return comment;
+    public int getCost() {
+        return cost;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 }

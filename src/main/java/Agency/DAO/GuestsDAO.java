@@ -17,7 +17,7 @@ import java.util.List;
 public class GuestsDAO {
 
     JdbcTemplate template;
-    private static final Logger logger= LoggerFactory.getLogger(CategoryDAO.class);
+    private static final Logger logger= LoggerFactory.getLogger(GuestsDAO.class);
 
     public List<Guests> getGuestsById(int userId){
         logger.info("Выполнение метода getGuestsById для вывода списка гостей");

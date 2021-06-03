@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-public class MessageDao {
+public class MessageDAO {
     private JdbcTemplate template;
-    private static final Logger logger= LoggerFactory.getLogger(MessageDao.class);
+    private static final Logger logger= LoggerFactory.getLogger(MessageDAO.class);
 
     public void setTemplate(JdbcTemplate template) {
         this.template = template;
@@ -18,7 +18,7 @@ public class MessageDao {
 
     public void add(Message message) {
         logger.info("Внесение сообщения в базу данных");
-        String createQuery = "INSERT INTO agency.messages(id, userId, organizatorId, message, date) VALUES(?, ?, ?, ?, ?, ?)";
+        String createQuery = "INSERT INTO agency.messages(id, userId, organizatorId, message, date) VALUES(?, ?, ?, ?, ?)";
         try {
             Object[] params = {message.getId(), message.getUserId(), message.getOrganizatorId(), message.getMessage(), message.getData()};
             template.update(createQuery, params);

@@ -39,7 +39,7 @@ public class UserController {
     CommentRatingDAO commentRatingDao;
 
     @Autowired
-    MessageDao messageDao;
+    MessageDAO messageDao;
 
     @ModelAttribute("userJSP")
     public User createUser() {
@@ -129,6 +129,17 @@ public class UserController {
         m.addAttribute("command", new Guests());
         return "Guests";
     }
+
+  /* @RequestMapping(value="/services")     //просмотр списка гостей
+    public String services (@ModelAttribute("userJSP")  Model m){
+        List<Services> list = ServicesDAO.getAllServices();
+        m.addAttribute("list",list);
+        return "Services";
+    }
+    */
+
+
+
 
     @RequestMapping("index")     //при нажати на кнопку Выход, сессия будет завершена и пользователь вернется на главную страницу, где не выполнен вход
     public String back(@ModelAttribute("userJSP") User user, SessionStatus sessionStatus){

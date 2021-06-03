@@ -84,7 +84,7 @@
 <main class="main">
 <div class="container">
     <section id="content">
-        <form action="/verifyUser">
+        <form action="verifyUser">
             <h1>Авторизация</h1>
             <div>
                 <input type="text" placeholder="Login" parth="login" id="login" />

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Agency:war" />
+      <artifact name="KP_JAVA:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BranchesTreeState">
@@ -30,172 +30,52 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f186e0-3cf6-4ee2-87d1-508b3f58c398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/signin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/autoscale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/sidebars.js" afterDir="false" />
+    <list default="true" id="0a972fca-7497-4ef0-85e1-997565f64335" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/ServicesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Services.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf373c03-f073-4e13-ad84-de6d35cc9431.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bf373c03-f073-4e13-ad84-de6d35cc9431.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/MessageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/MessageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/Guests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Guests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/Entry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/Entry.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/OrganizatorRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/OrganizatorRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/UserRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/UserRegistration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/CommentRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/CommentRating.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.47.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/CommentRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/CommentRating.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Guests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Guests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="agency@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="agency@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="agency@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="agency: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1227">
-              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/services">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Error.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>weddin</find>
-      <find>wedd</find>
-      <find>save</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -203,26 +83,12 @@
         <option value="SergeyGolubev" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Two" />
       </map>
     </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -231,117 +97,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="y" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1066" />
-  </component>
   <component name="ProjectId" id="1tPNllBLxtVDKDEOK2VJsSSOCM8" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Agency" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Agency" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Agency" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Agency" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -360,26 +116,13 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Agency_war/" />
+    <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.46" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Agency:war">
+        <artifact name="KP_JAVA:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/Agency_war" />
+            <option name="CONTEXT_PATH" value="/KP_JAVA_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -487,85 +230,6 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7620000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Database Console" order="9" sideWeight="0.49946696" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50159913" side_tool="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Database Console" order="9" sideWeight="0.49946696" weight="0.3290461" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50159913" side_tool="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -575,12 +239,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -611,6 +269,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Сообщения" />
@@ -622,66 +281,87 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="857" y="131" key="#Project_Structure/0.0.2752.1112@0.0.2752.1112" timestamp="1622668613027" />
+    <state x="656" y="241" width="619" height="795" key="#Tomcat_9.0.41" timestamp="1622742932320">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="656" y="241" width="619" height="795" key="#Tomcat_9.0.41/0.0.2560.1400@0.0.2560.1400" timestamp="1622742932320" />
     <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622672447792">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1622672447792" />
-    <state x="1182" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1622673106526">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state x="1100" y="302" key="#com.intellij.ide.util.MemberChooser" timestamp="1622732753510">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1100" y="302" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1622732753510" />
     <state x="1182" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.2752.1112@0.0.2752.1112" timestamp="1622673106526" />
-    <state width="2709" height="305" key="GridCell.Tab.0.bottom" timestamp="1622675432278">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.0.bottom" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="2709" height="305" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432278" />
-    <state width="2709" height="305" key="GridCell.Tab.0.center" timestamp="1622675432278">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.0.center" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="2709" height="305" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432278" />
-    <state width="2709" height="305" key="GridCell.Tab.0.left" timestamp="1622675432277">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.0.left" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="2709" height="305" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432277" />
-    <state width="2709" height="305" key="GridCell.Tab.0.right" timestamp="1622675432278">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.0.right" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="2709" height="305" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432278" />
-    <state width="1875" height="305" key="GridCell.Tab.1.bottom" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.1.bottom" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="1875" height="305" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.1.center" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.1.center" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="1875" height="305" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.1.left" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.1.left" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="1875" height="305" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.1.right" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.1.right" timestamp="1622744135177">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135177" />
     <state width="1875" height="305" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.bottom" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.2.bottom" timestamp="1622744135178">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135178" />
     <state width="1875" height="305" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.center" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.2.center" timestamp="1622744135178">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135178" />
     <state width="1875" height="305" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.left" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.2.left" timestamp="1622744135178">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135178" />
     <state width="1875" height="305" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.right" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
+    <state width="1240" height="54" key="GridCell.Tab.2.right" timestamp="1622744135178">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="1240" height="54" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1622744135178" />
     <state width="1875" height="305" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
     <state x="885" y="201" key="SettingsEditor" timestamp="1622672620364">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="885" y="201" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1622672620364" />
+    <state x="1076" y="520" width="408" height="356" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1622737388060">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1076" y="520" width="408" height="356" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1622737388060" />
     <state x="1220" y="332" width="535" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1622674417480">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -690,115 +370,6 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1198" y="455" key="git4idea.ui.GitStashDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1622672077345" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserIndex.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="143" column="51" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/messages.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/services">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/typeofuser">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
