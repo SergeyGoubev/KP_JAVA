@@ -137,7 +137,7 @@
     </div>
 
     <div class="form-floating">
-        <input type="file" name="file" id="floatingInput" placeholder="ФОТО"/>
+        <input type="file" name="image2" id="floatingInput" placeholder="ФОТО"/>
     </div>
 
     <div class="form-floating">

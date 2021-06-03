@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <style>
-       
+        <%@ include file="/resources/css/carousel.css" %>
+        <%@ include file="/resources/css/style.css" %>
     </style>
 
 </head>
@@ -80,28 +81,27 @@
     </nav>
 </header>
 
-<main class="form-signin">
-    <form:form method="post" action="verifyUser">
+<main class="main">
+<div class="container">
+    <section id="content">
+        <form action="/verifyUser">
+            <h1>Авторизация</h1>
+            <div>
+                <input type="text" placeholder="Login" parth="login" id="login" />
+            </div>
+            <div>
+                <input type="password" placeholder="Password" parth="password" id="password" />
+            </div>
+            <div>
+                <input type="submit" value="Вход" />
+                <a href="organizatorRegistration">Регистрация<br>организатора</a>
+                <a href="userRegistration">Регистрация<br>Пользователя</a>
+            </div>
+        </form><!-- form -->
 
-    <h1 class="h3 mb-3 fw-normal">Войдите</h1>
-
-    <div class="form-floating">
-        <form:input path="login" class="form-control" id="floatingInput" placeholder="Ivanov1234"/>
-        <label for="floatingInput">Логин</label>
-    </div>
-
-    <div class="form-floating">
-        <form:input type="password" path="password" class="form-control" id="floatingPassword" placeholder="Password" />
-        <label for="floatingPassword">Пароль</label>
-    </div>
-
-    <button class="btn btn-outline-success" type="submit" value="Войти" >Войти</button>
-
-    </form:form>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-
+    </section><!-- content -->
+</div><!-- container -->
+</main>
 </body>
 </html>
 

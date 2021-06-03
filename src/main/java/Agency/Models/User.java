@@ -6,7 +6,7 @@ public class User {
     private String surname;
     private int age;
     private String telephone;
-    private String weddingWishes;
+    private String Wishes;
     private String category;
     private String description;
     private int typeOfUser;
@@ -22,7 +22,7 @@ public class User {
     }
 
     public User(int id, String name, String surname, int age, String telephone,
-                String weddingWishes, String category, String description, int typeOfUser,
+                String Wishes, String category, String description, int typeOfUser,
                 String login, String password, String email, byte[] image,
                 String organizationName, String address, float rating){
         userId = id;
@@ -30,7 +30,7 @@ public class User {
         this.surname = surname;
         this.age = age;
         this.telephone = telephone;
-        this.weddingWishes = weddingWishes;
+        this.Wishes = Wishes;
         this.category = category;
         this.description = description;
         this.typeOfUser = typeOfUser;
@@ -83,12 +83,12 @@ public class User {
         this.telephone = telephone;
     }
 
-    public String getWeddingWishes() {
-        return weddingWishes;
+    public String getWishes() {
+        return Wishes;
     }
 
-    public void setWeddingWishes(String weddingWishes) {
-        this.weddingWishes = weddingWishes;
+    public void setWishes(String Wishes) {
+        this.Wishes = Wishes;
     }
 
     public String getCategory() {

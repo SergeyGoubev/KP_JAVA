@@ -161,15 +161,15 @@ public class UserController {
     }
 
     @RequestMapping(value="/newuser")  //добавление нового пользователя
-    public String saveUser(@ModelAttribute("command") User user){
+    public String newUser(@ModelAttribute("command") User user){
         int id = userDao.insert(user);    //вызов метода insert
-        logger.info("Выполнение метода saveUser" + id);
+        logger.info("Выполнение метода newuser" + id);
         if (id!=-1) return "redirect:/entry";  //возвращаем страницу входа
         else return "redirect:/Error";
     }
 
     @RequestMapping(value="/newguest")  //добавление нового гостя
-    public String saveGuest(@ModelAttribute("command") Guests guest, @ModelAttribute("userJSP") User user){
+    public String newGuest(@ModelAttribute("command") Guests guest, @ModelAttribute("userJSP") User user){
         int id = guestsDao.insertGuest(user.getUserId(), guest);    //вызов метода insertGuest
         logger.info("Выполнение метода insertGuest" + id);
         if (id!=-1) return "redirect:/guests";  //возвращаем страницу входа
@@ -185,7 +185,7 @@ public class UserController {
 
     @RequestMapping(value="/verifyUser")  //проверка пользователя при входе
     public String verifyUser(@ModelAttribute("command") User user, Model m){
-        User foundedUser=userDao.verifyUser(user);    //Выполнение метода checkUser
+        User foundedUser=userDao.verifyUser(user);    //Выполнение метода verifyUser
         logger.info("Выполнение метода verifyUSer " + user.getLogin());
         if (foundedUser==null) return "redirect:/Error";
         m.addAttribute("userJSP", foundedUser);
@@ -196,8 +196,8 @@ public class UserController {
     }
 
     @RequestMapping(value="/neworganizator")  //добавление нового организатора
-    public String saveOrganizator(@ModelAttribute("command") User user, @RequestParam("image2") MultipartFile image) {
-        logger.info("Выполнение метода saveOrganizator " + image.getSize());
+    public String newOrganizator(@ModelAttribute("command") User user, @RequestParam("image2") MultipartFile image) {
+        logger.info("Выполнение метода newOrganizator " + image.getSize());
         try {
             user.setImage(image.getBytes());
         } catch (Exception e) {

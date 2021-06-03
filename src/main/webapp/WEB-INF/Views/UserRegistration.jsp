@@ -114,12 +114,12 @@
     </div>
 
     <div class="form-floating">
-        <form:input path="weddingWishes" class="form-control" id="floatingInput" placeholder="Ivan"/>
+        <form:input path="Wishes" class="form-control" id="floatingInput" placeholder="Ivan"/>
         <label for="floatingInput">Пожелания</label>
     </div>
 
     <div class="form-floating">
-        <input type="file" name="file" id="floatingInput" placeholder="ФОТО"/>
+        <input type="file" name="image2" id="floatingInput" placeholder="ФОТО"/>
     </div>
 
     <div class="form-floating">
