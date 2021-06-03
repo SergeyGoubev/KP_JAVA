@@ -61,9 +61,10 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="../Services/8">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Services/9">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Services/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
+                            <li class="nav-item"><a class="nav-link" href="../pageUserInfo">${userJSP.name} ${userJSP.surname}</a></li>
                             <li class="nav-item"><a class="nav-link" href="../messages/${user.organizatorId}">Сообщения</a></li>
                             <li class="nav-item"><a class="nav-link" href="../guests">Список гостей</a></li>
                             <li class="nav-item"><a class="nav-link" href="../error">Учёт расходов</a></li>

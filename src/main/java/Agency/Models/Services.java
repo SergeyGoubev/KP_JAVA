@@ -6,6 +6,7 @@ public class  Services {
     private String name;
     private String description;
     private int cost;
+    private int category;
 
 
     public int getId() {
@@ -46,5 +47,13 @@ public class  Services {
 
     public void setCost(int cost) {
         this.cost = cost;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 }

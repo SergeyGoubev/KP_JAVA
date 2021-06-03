@@ -1,9 +1,8 @@
 package Agency.DAO;
 
-import Agency.Models.Guests;
-import Agency.Models.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -17,8 +16,9 @@ import java.util.List;
 
 @Repository
 public class ServicesDAO {
-    JdbcTemplate template;
+    static JdbcTemplate template;
     private static final Logger logger= LoggerFactory.getLogger(ServicesDAO.class);
+
 
     public List<Services> getAllServices(){
         logger.info("Выполнение метода getAllServices для вывода всех сервисов");

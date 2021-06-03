@@ -66,6 +66,7 @@
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="messages/${user.organizatorId}">Сообщения</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index">Выход</a></li>
                         </ul>
                     </li>
                 </ul>

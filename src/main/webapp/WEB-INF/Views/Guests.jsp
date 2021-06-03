@@ -74,6 +74,7 @@
                             <li class="nav-item"><a class="nav-link" href="guests">Список гостей</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Учёт расходов</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index">Выход</a></li>
                         </ul>
                     </li>
                 </ul>

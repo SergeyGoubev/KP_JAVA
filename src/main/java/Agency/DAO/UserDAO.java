@@ -117,6 +117,7 @@ public class UserDAO {
         this.template = template;
     }
 
+
     /*public List<User> getAllUsers(){
         logger.info("Выполнение метода getAllUsers для вывода всех пользователей");
         try{
