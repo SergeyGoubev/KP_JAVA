@@ -48,28 +48,25 @@
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../Services/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Services/5">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/6">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/7">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="../error">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Services/11">Музыкальное сопровождение</a>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/11">Музыкальное сопровождение</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="../Services/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/10">Постановка танца</a></li>
                             <li class="nav-item"><a class="nav-link" href="../error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/8">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/9">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../messages/${user.organizatorId}">Сообщения</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../guests">Список гостей</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../error">Учёт расходов</a></li>
                             <li class="nav-item"><a class="nav-link" href="../error">Мои заказы</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index">Выход</a></li>
                         </ul>
@@ -84,22 +81,21 @@
 <main>
     <div align="center" class="gosti">
         <table border="2" width="70%" cellpadding="2">
+            <tr>
+                <td>Название:</td>
+                <td>Описание:</td>
+                <td>Цена:</td>
+                <td></td>
+            </tr>
 
             <c:choose>
                 <c:when test="${fn:length(list) gt 0}">
                     <c:forEach var="services" items="${list}">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <tr>
-                                    <td>Название: ${services.name}</td>
-                                    <td>Описание: ${services.description}</td>
-                                    <td>Цена: ${services.costs}</td>
-                                </tr>
-                                <p><a class="btn btn-secondary" href="../organizatorInfo/${user.userId}">Подробнее&raquo;</a>
-                                </p>
-                            </div><!-- /.col-lg-4 -->
-                        </div>
-                        <!-- /.row -->
+                        <tr>
+                            <td>${services.name}</td>
+                            <td>${services.description}</td>
+                            <td>${services.cost}</td>
+                        </tr>
                     </c:forEach>
                 </c:when>
 

@@ -46,22 +46,22 @@
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../Services/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Services/5">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/6">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/7">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="../error">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Services/11">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../Services/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/10">Постановка танца</a></li>
                             <li class="nav-item"><a class="nav-link" href="../error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/8">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Services/9">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="../messages/${user.organizatorId}">Сообщения</a></li>
@@ -91,6 +91,7 @@
                             <p>Организация: ${user.organizationName}</p>
                             <p>Рейтинг: ${user.rating}</p>
                             <p><a class="btn btn-secondary" href="../organizatorInfo/${user.userId}">Подробнее &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="../services">Услуги &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
                     </div><!-- /.row -->
                 </c:forEach>

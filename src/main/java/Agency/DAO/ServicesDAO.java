@@ -2,7 +2,6 @@ package Agency.DAO;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -18,6 +17,26 @@ import java.util.List;
 public class ServicesDAO {
     static JdbcTemplate template;
     private static final Logger logger= LoggerFactory.getLogger(ServicesDAO.class);
+
+    public static List<Services> getServiceById(int userId) {
+        logger.info("Выполнение метода getServiceById для вывода списка услуг");
+        String Sql="select * from services where userId=" + userId;
+        try{
+            return template.query(Sql,new RowMapper<Services>(){
+                public Services mapRow(ResultSet rs, int row) throws SQLException {
+                    Services g =  new Services();
+                    g.setId(rs.getInt("id"));
+                    g.setName(rs.getString("name"));
+                    g.setDescription(rs.getString("description"));
+                    g.setCost(rs.getInt("costs"));
+                    return g;
+                }
+            });
+        }catch (Exception e) {
+            logger.error("Ошибка при выполнении метода getServiceById: ", e);
+            return null;
+        }
+    }
 
 
     public List<Services> getAllServices(){

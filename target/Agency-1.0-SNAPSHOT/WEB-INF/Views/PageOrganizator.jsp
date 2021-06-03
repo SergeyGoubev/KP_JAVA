@@ -46,26 +46,26 @@
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="Services/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Services/5">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Services/6">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Services/7">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="error">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Services/11">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Services/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/10">Постановка танца</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Services/8">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Services/9">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="messages/${user.organizatorId}">Сообщения</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index">Выход</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -80,8 +80,8 @@
             <div class="col-lg-4">
                 <svg class="bd-placeholder-img rounded-circle" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="../getUserImage/${user.userId}" width="140" height="140"/></svg>
 
-                <h2>${user.category}: ${user.name} ${user.surname}</h2>
-                <p>Рейтинг: ${user.rating}}</p>
+                <h2>${user.name} ${user.surname}</h2>
+                <p>Рейтинг: ${user.rating}</p>
                 <p>Описание: ${user.description}</p>
                 <p>Телефон: ${user.telephone}</p>
                 <p>Email: ${user.email}</p>

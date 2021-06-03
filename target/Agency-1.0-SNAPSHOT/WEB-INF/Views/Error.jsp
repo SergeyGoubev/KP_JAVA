@@ -54,7 +54,7 @@
                             <li class="nav-item"><a class="nav-link" href="error">Шоу-программы</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Музыкальное сопровождение</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Постановка танца</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/7">Шоу программа для взрослых</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="error">Транспорт</a></li>

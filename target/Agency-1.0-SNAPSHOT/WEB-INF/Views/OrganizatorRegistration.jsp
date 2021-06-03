@@ -116,16 +116,14 @@
         <form:select path="category" class="form-control">
             <option label="Ведущие" value="1" selected>Ведущие</option>
             <option>Видеографы</option>
-            <option>Рестораны</option>
-            <option>Декор и флористика</option>
-            <option>Мастера причёски и макияжа</option>
-            <option>Свадебные салоны</option>
-            <option>Шоу-программы</option>
-            <option>Транспорт</option>
-            <option>Торты</option>
-            <option>Музыкальное сопровождение</option>
-            <option>Постановка свадебного танца</option>
-            <option>Отели</option>
+            <option>Владелец ресторана</option>
+            <option>Кондитер</option>
+            <option>Дизайнер-флорист</option>
+            <option>Владелец салона красоты</option>
+            <option>Водитель</option>
+            <option>Владелец отеля</option>
+            <option>Танцор</option>
+            <option>Диджей</option>
         </form:select>
         <label for="floatingInput">Категория</label>
     </div>

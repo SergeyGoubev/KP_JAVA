@@ -18,6 +18,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.LocalDateTime;
+
 import java.util.List;
 
 @Controller
@@ -249,6 +250,15 @@ public class UserController {
         message.setData(LocalDateTime.now());
         messageDao.add(message);
         return new ModelAndView("redirect:messages/" + message.getUserId());
+    }
+
+    @RequestMapping(value="/services")     //просмотр списка услуг
+    public String services(@ModelAttribute("userJSP") User user, Model m){
+        int userId = user.getUserId();
+        List<Services> list = ServicesDAO.getServiceById(userId);
+        m.addAttribute("list",list);
+        m.addAttribute("command", new Services());
+        return "Services";
     }
 }
 
