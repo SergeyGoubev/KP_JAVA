@@ -28,6 +28,7 @@
             <form:hidden path="organizatorId"/> <br/>
            Текст:  <form:input path="message"/> <br/>
            Id получателя: <form:input path="userId"/> <br/>
+            <input type="submit" value="Отправить" />
         </form:form>
     </div>
 </body>

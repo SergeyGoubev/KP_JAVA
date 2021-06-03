@@ -73,7 +73,7 @@
                 <form class="d-flex" action="userRegistration">
                     <button class="btn btn-outline-success">Регистрация клиента</button>
                 </form>
-                <form class="d-flex" action="OrganizatirRegistration">
+                <form class="d-flex" action="organizatorRegistration">
                     <button class="btn btn-outline-success">Регистрация организатора</button>
                 </form>
             </div>

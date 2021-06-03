@@ -114,7 +114,7 @@
     </div>
 
     <div class="form-floating">
-        <form:input path="Wishes" class="form-control" id="floatingInput" placeholder="Ivan"/>
+        <form:input path="wishes" class="form-control" id="floatingInput" placeholder="Ivan"/>
         <label for="floatingInput">Пожелания</label>
     </div>
 

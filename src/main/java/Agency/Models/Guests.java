@@ -11,7 +11,7 @@ public class Guests {
     }
 
     public Guests(int id, int userId, String name, String surname, String comment){
-        id= id;
+        id = id;
         this.userId = userId;
         this.name = name;
         this.surname = surname;

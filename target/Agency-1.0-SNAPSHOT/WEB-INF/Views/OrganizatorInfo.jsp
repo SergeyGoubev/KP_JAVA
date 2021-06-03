@@ -31,49 +31,49 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="organizatorIndex">ПуА</a>
+            <a class="navbar-brand" href="../organizatorIndex">ПуА</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="organizatorIndex">Главная</a>
+                        <a class="nav-link active" aria-current="page" href="../organizatorIndex">Главная</a>
                     </li>
                     <li class="nav-item"><a class="nav-link">Люди<i class="fa fa-angle-down"></i></a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="Hosts/1">Ведущие</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/2">Фотографы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/3">Видеографы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/1">Ведущие</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/2">Фотографы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/3">Видеографы</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="Hosts/4">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/10">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/10">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/5">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/6">Салон красоты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/5">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/6">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="Hosts/8">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/11">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/12">Постановка танца</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Hosts/7">Шоу программа для взрослых</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/8">Шоу-программы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/12">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../Hosts/7">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/9">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Hosts/13">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/9">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Hosts/13">Отели</a></li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <form class="d-flex" action="index">
+                <form class="d-flex" action="../index">
                     <button class="btn btn-outline-success">Выход</button>
                 </form>
-                <form class="d-flex" action="${backRef}">
+                <form class="d-flex" action="../${backRef}">
                     <button class="btn btn-outline-success">Вернуться назад</button>
                 </form>
             </div>

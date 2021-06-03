@@ -76,10 +76,10 @@ public class UserDAO {
 
     public int insert(User user){
         logger.info("Выполнение метода insert - добавление нового клиента");
-        String query="insert into user(name, surname, age, telephone, email," +
+        String query="insert into user(userId, name, surname, age, telephone, email," +
                 "Wishes, login, password, rating, typeOfUser) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         logger.info(query);
-        Object[] params = {user.getName(), user.getSurname(),
+        Object[] params = {user.getUserId(), user.getName(), user.getSurname(),
                 user.getAge(), user.getTelephone(), user.getEmail(),
                 user.getWishes(), user.getLogin(), user.getPassword(), 0, 1};
         int[] types = {Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.INTEGER, Types.VARCHAR,

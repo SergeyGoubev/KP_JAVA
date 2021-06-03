@@ -82,25 +82,25 @@
 </header>
 
 <main class="main">
-<div class="container">
-    <section id="content">
-        <form action="/verifyUser">
-            <h1>Авторизация</h1>
-            <div>
-                <input type="text" placeholder="Login" parth="login" id="login" />
-            </div>
-            <div>
-                <input type="password" placeholder="Password" parth="password" id="password" />
-            </div>
-            <div>
-                <input type="submit" value="Вход" />
-                <a href="organizatorRegistration">Регистрация<br>организатора</a>
-                <a href="userRegistration">Регистрация<br>Пользователя</a>
-            </div>
-        </form><!-- form -->
+    <div class="container">
+        <section id="content">
+            <form:form method="post" action="verifyUser">
+                <h1>Авторизация</h1>
+                <div>
+                    <form:input path="login" class="form-control" id="floatingInput" placeholder="Ivanov1234"/>
+                </div>
+                <div>
+                    <form:input type="password" path="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                </div>
+                <div>
+                    <input type="submit" value="Вход" />
+                    <a href="organizatorRegistration">Регистрация<br>организатора</a>
+                    <a href="userRegistration">Регистрация<br>Пользователя</a>
+                </div>
+            </form:form><!-- form -->
 
-    </section><!-- content -->
-</div><!-- container -->
+        </section><!-- content -->
+    </div><!-- container -->
 </main>
 </body>
 </html>

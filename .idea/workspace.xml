@@ -30,53 +30,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1f186e0-3cf6-4ee2-87d1-508b3f58c398" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/signin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/autoscale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/sidebars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf373c03-f073-4e13-ad84-de6d35cc9431.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bf373c03-f073-4e13-ad84-de6d35cc9431.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e1f186e0-3cf6-4ee2-87d1-508b3f58c398" name="Default Changelist" comment="Worked">
       <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/Entry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/Entry.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/OrganizatorRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/OrganizatorRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/UserRegistration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/UserRegistration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/CommentRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/CommentRating.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/CommentRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/CommentRating.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Guests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Guests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,6 +68,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="agency: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="agency@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="agency: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -123,59 +85,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
+            <state relative-caret-position="277">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1227">
-              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/services">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
+            <state relative-caret-position="274">
+              <caret line="234" column="28" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Error.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="751">
+              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -185,8 +119,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -195,6 +129,11 @@
       <find>weddin</find>
       <find>wedd</find>
       <find>save</find>
+      <find>newuse</find>
+      <find>saveuser</find>
+      <find>verif</find>
+      <find>verify</find>
+      <find>mysql</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,21 +145,39 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Two" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/Services.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/services.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/CommentRating.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/Guests.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/messages.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Models/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/DAO/MessageDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Guests.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Hosts.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorIndex.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/PageOrganizator.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserIndex.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" />
       </list>
     </option>
   </component>
@@ -238,13 +195,30 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Agency" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Agency" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="976" />
+    <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
   <component name="ProjectId" id="1tPNllBLxtVDKDEOK2VJsSSOCM8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -316,6 +290,13 @@
               <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -325,6 +306,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KP_JAVA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KP_JAVA" type="b2602c69:ProjectViewProjectNode" />
@@ -354,11 +344,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Images KP/abc_5947-1.jpg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KPJAVA" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -374,7 +364,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Agency_war/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/Agency_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Agency:war">
@@ -385,6 +375,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_KP_JAVA" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -461,7 +453,8 @@
       <workItem from="1622666918891" duration="1758000" />
       <workItem from="1622668685031" duration="4536000" />
       <workItem from="1622701775581" duration="1907000" />
-      <workItem from="1622725405672" duration="5713000" />
+      <workItem from="1622725405672" duration="13967000" />
+      <workItem from="1622739650145" duration="6234000" />
     </task>
     <task id="LOCAL-00001" summary="Сообщения">
       <created>1622675306219</created>
@@ -484,17 +477,24 @@
       <option name="project" value="LOCAL" />
       <updated>1622675374940</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1622731189264</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622731189264</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7620000" />
+    <option name="totallyTimeSpent" value="22108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -504,7 +504,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" visible="true" weight="0.3301179" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -514,15 +514,15 @@
       <window_info anchor="bottom" id="Database Console" order="9" sideWeight="0.49946696" weight="0.3290461" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50159913" side_tool="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.3301179" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3290461" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
@@ -618,159 +618,50 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="857" y="131" key="#Project_Structure" timestamp="1622668613027">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state x="857" y="131" key="#Project_Structure/0.0.2752.1112@0.0.2752.1112" timestamp="1622668613027" />
-    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622672447792">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1622672447792" />
-    <state x="1182" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1622673106526">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state x="1182" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.2752.1112@0.0.2752.1112" timestamp="1622673106526" />
-    <state width="2709" height="305" key="GridCell.Tab.0.bottom" timestamp="1622675432278">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="2709" height="305" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432278" />
-    <state width="2709" height="305" key="GridCell.Tab.0.center" timestamp="1622675432278">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="2709" height="305" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432278" />
-    <state width="2709" height="305" key="GridCell.Tab.0.left" timestamp="1622675432277">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="2709" height="305" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432277" />
-    <state width="2709" height="305" key="GridCell.Tab.0.right" timestamp="1622675432278">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="2709" height="305" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432278" />
-    <state width="1875" height="305" key="GridCell.Tab.1.bottom" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.1.center" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.1.left" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.1.right" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.bottom" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.center" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.left" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state width="1875" height="305" key="GridCell.Tab.2.right" timestamp="1622675432273">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state width="1875" height="305" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1622675432273" />
-    <state x="885" y="201" key="SettingsEditor" timestamp="1622672620364">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state x="885" y="201" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1622672620364" />
-    <state x="1220" y="332" width="535" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1622674417480">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state x="1220" y="332" width="535" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1622674417480" />
-    <state x="1198" y="455" key="git4idea.ui.GitStashDialog" timestamp="1622672077345">
-      <screen x="0" y="0" width="2752" height="1112" />
-    </state>
-    <state x="1198" y="455" key="git4idea.ui.GitStashDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1622672077345" />
+    <state x="857" y="131" key="#Project_Structure" />
+    <state x="857" y="131" key="#Project_Structure/0.0.2752.1112@0.0.2752.1112" />
+    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
+    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" />
+    <state x="1182" y="240" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="1182" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.2752.1112@0.0.2752.1112" />
+    <state width="2709" height="305" key="GridCell.Tab.0.bottom" />
+    <state width="2709" height="305" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" />
+    <state width="2709" height="305" key="GridCell.Tab.0.center" />
+    <state width="2709" height="305" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" />
+    <state width="2709" height="305" key="GridCell.Tab.0.left" />
+    <state width="2709" height="305" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" />
+    <state width="2709" height="305" key="GridCell.Tab.0.right" />
+    <state width="2709" height="305" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.1.bottom" />
+    <state width="1875" height="305" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.1.center" />
+    <state width="1875" height="305" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.1.left" />
+    <state width="1875" height="305" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.1.right" />
+    <state width="1875" height="305" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.2.bottom" />
+    <state width="1875" height="305" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.2.center" />
+    <state width="1875" height="305" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.2.left" />
+    <state width="1875" height="305" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" />
+    <state width="1875" height="305" key="GridCell.Tab.2.right" />
+    <state width="1875" height="305" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" />
+    <state x="885" y="201" key="SettingsEditor" />
+    <state x="885" y="201" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" />
+    <state x="1220" y="332" width="535" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" />
+    <state x="1220" y="332" width="535" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2752.1112@0.0.2752.1112" />
+    <state x="1198" y="455" key="git4idea.ui.GitStashDialog" />
+    <state x="1198" y="455" key="git4idea.ui.GitStashDialog/0.0.2752.1112@0.0.2752.1112" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserIndex.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="143" column="51" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/messages.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="173" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="67" column="79" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/services">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/typeofuser">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
           <filtering>
             <filter text="" />
           </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -783,19 +674,319 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/services.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1227">
-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/user">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/CommentRating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/Guests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/messages">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
           <filtering>
             <filter text="" />
           </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/DAO/MessageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/guests">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/commentrating">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="2dc96aa2-6c9d-444e-a28b-850430b02998">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/application-context.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/mvc-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-15/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.0.3.RELEASE/spring-jdbc-4.0.3.RELEASE.jar!/org/springframework/jdbc/core/ArgumentTypePreparedStatementSetter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.0.3.RELEASE/spring-jdbc-4.0.3.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1571">
+          <caret line="1086" selection-start-line="1086" selection-end-line="1086" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bf373c03-f073-4e13-ad84-de6d35cc9431/schema/agency/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c749181a-6da1-4c1f-8400-272e465e1d78">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6dfa82f-42f5-4e44-90e7-1db66f11c212/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.4.RELEASE/spring-beans-4.1.4.RELEASE.jar!/org/springframework/beans/BeanWrapperImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="811" selection-start-line="811" selection-end-line="811" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="66" column="41" lean-forward="true" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f6dfa82f-42f5-4e44-90e7-1db66f11c212/schema/agency/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c749181a-6da1-4c1f-8400-272e465e1d78">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f6dfa82f-42f5-4e44-90e7-1db66f11c212/schema/agency/table/services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c749181a-6da1-4c1f-8400-272e465e1d78">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f6dfa82f-42f5-4e44-90e7-1db66f11c212/schema/agency/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="c749181a-6da1-4c1f-8400-272e465e1d78">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="68" column="21" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="67" column="20" lean-forward="true" selection-start-line="67" selection-start-column="20" selection-end-line="74" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Hosts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/messages.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/PageOrganizator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Guests.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/OrganizatorRegistration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/UserRegistration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="234" column="28" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

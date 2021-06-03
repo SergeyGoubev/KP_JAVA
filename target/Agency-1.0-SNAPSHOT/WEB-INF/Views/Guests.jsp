@@ -105,7 +105,7 @@
                     <td><form:input path="name"/></td>
                     <td><form:input path="surname"/></td>
                     <td><form:input path="comment"/></td>
-                    <td><input type="submit" value="Добавить" /></td>
+                    <td><input class="btn btn-outline-success" type="submit" value="Добавить" /></td>
                 </tr>
             </form:form>
 
@@ -116,7 +116,7 @@
                             <td>${guests.name}</td>
                             <td>${guests.surname}</td>
                             <td>${guests.comment}</td>
-                            <td><form:form method="post" action="deleteGuest/${guests.id}"><input type="submit" value="Удалить" /></form:form></td>
+                            <td><form:form method="post" action="deleteGuest/${guests.id}"><input class="btn btn-outline-success" type="submit" value="Удалить" /></form:form></td>
                         </tr>
                     </c:forEach>
                 </c:when>

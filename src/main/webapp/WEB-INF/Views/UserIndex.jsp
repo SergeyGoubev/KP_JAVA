@@ -69,17 +69,14 @@
                             <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link">Личный кабинет</a>
+                        <ul class="submenu">
+                            <li class="nav-item"><a class="nav-link" href="entry">Вход</a></li>
+                            <li class="nav-item"><a class="nav-link" href="userRegistration">Регистрация клиента</a></li>
+                            <li class="nav-item"><a class="nav-link" href="organizatorRegistration">Регистрация организатора</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <form class="d-flex" action="index">
-                    <button class="btn btn-outline-success">Выход</button>
-                </form>
-                <form class="d-flex" action="pageUserInfo">
-                    <button class="btn btn-outline-success">${userJSP.name} ${userJSP.surname}</button>
-                </form>
             </div>
         </div>
     </nav>

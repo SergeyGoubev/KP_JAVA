@@ -62,17 +62,14 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="../Hosts/9">Транспорт</a></li>
                     <li class="nav-item"><a class="nav-link" href="../Hosts/13">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link">Личный кабинет</a>
+                        <ul class="submenu">
+                            <li class="nav-item"><a class="nav-link" href="entry">Вход</a></li>
+                            <li class="nav-item"><a class="nav-link" href="userRegistration">Регистрация клиента</a></li>
+                            <li class="nav-item"><a class="nav-link" href="organizatorRegistration">Регистрация организатора</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <form class="d-flex" action="../index">
-                    <button class="btn btn-outline-success">Выход</button>
-                </form>
-                <form class="d-flex" action="../${backRef}">
-                    <button class="btn btn-outline-success">Вернуться назад</button>
-                </form>
             </div>
         </div>
     </nav>
