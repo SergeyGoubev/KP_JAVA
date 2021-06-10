@@ -3,13 +3,14 @@ package Agency.Controllers;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.time.LocalDateTime;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import Agency.DAO.*;
-import Agency.Models.*;
-import jdk.vm.ci.services.Services;
+import Agency.Models.Category;
+import Agency.Models.CommentRating;
+import Agency.Models.Guest;
+import Agency.Models.User;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,7 +18,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @SessionAttributes({"userJSP", "backRef"})   //Сессионные атрибуты для извлечения данных о пользователе после входа.
@@ -205,6 +205,7 @@ public class UserController {
 
     @RequestMapping(value = "/verifyUser")  //проверка пользователя при входе
     public String verifyUser(@ModelAttribute("command") User user, Model m) {
+        /*
         User foundedUser = userDao.verifyUser(user);    //Выполнение метода verifyUser
         if(foundedUser == null) return "redirect:/Error";
         m.addAttribute("userJSP", foundedUser);
@@ -212,6 +213,9 @@ public class UserController {
         if(foundedUser.getTypeOfUser().getTypeOfUser() == 2) return "redirect:/organizatorIndex";
         if(foundedUser.getTypeOfUser().getTypeOfUser() == 3) return "redirect:/adminIndex";
         return "redirect:/Error";
+
+         */
+        return null;
     }
 
     @RequestMapping(value = "/neworganizator")  //добавление нового организатора
@@ -253,6 +257,7 @@ public class UserController {
         return "Error";
     }
 
+    /*
     @RequestMapping("/messages/{id}")
     public ModelAndView messages(@PathVariable("id") int id) {
         ModelAndView modelAndView = new ModelAndView("messages");
@@ -262,7 +267,7 @@ public class UserController {
         newMessage.setUserId(id);
         modelAndView.addObject("message", newMessage);
         return modelAndView;
-    }
+    }4
 
     @RequestMapping("/send")
     public ModelAndView send(@RequestBody @ModelAttribute("message") Message message) {
@@ -279,4 +284,6 @@ public class UserController {
         m.addAttribute("command", new Services());
         return "Services";
     }
+
+     */
 }

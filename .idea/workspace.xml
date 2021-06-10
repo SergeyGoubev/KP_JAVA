@@ -30,14 +30,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="Дао и модель">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/CommentRatingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/CommentRatingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" afterDir="false" />
-    </list>
+    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="Дао и модель" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
