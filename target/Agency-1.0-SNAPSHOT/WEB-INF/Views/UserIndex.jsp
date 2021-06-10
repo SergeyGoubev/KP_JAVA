@@ -2,12 +2,13 @@
   Created by IntelliJ IDEA.
   User: Сергей
   Date: 29.05.2021
-  Time: 21:50
+  Time: 22:14
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
     <title> Агенство по проведению праздников</title>
@@ -27,60 +28,57 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index">ПуА</a>
+            <a class="navbar-brand" href="userIndex">ПуА</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index">Главная</a>
+                        <a class="nav-link active" aria-current="page" href="userIndex">Главная</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link">Люди</a>
+                    <li class="nav-item"><a class="nav-link">Люди<i class="fa fa-angle-down"></i></a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="error">Ведущие</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Фотографы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Видеографы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/1">Ведущие</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/2">Фотографы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/3">Видеографы</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link">Еда</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="error">Рестораны</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Торты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/4">Рестораны</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/5">Торты</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="error">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link">Салоны</a>
-                        <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="error">Салон красоты</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/6">Декор и флористика</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/7">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="error">Шоу-программы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Музыкальное сопровождение</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/11">Музыкальное сопровождение</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Hosts/10">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="error">Транспорт</a></li>
-                    <li class="nav-item"><a class="nav-link" href="error">Отели</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/8">Транспорт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Hosts/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="entry">Вход</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/userRegistration">Регистрация клиента</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/organizatorRegistration">Регистрация организатора</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pageUserInfo">${userJSP.name} ${userJSP.surname}</a></li>
+                            <li class="nav-item"><a class="nav-link" href="messages/${user.organizatorId}">Сообщения</a></li>
+                            <li class="nav-item"><a class="nav-link" href="guests">Список гостей</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Учёт расходов</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index">Выход</a></li>
                         </ul>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 </header>
 
 <main>
-
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -88,18 +86,6 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Здравствуй, гость</h1>
-                        <p>Не желаешь ли ты зарегистрироваться?</p>
-                        <p><a class="btn btn-lg btn-primary" href="userRegistration">Регистрация клиента</a>
-                            <a class="btn btn-lg btn-primary" href="organizatorRegistration">Регистрация организатора</a></p>
-                    </div>
-                </div>
-            </div>
             <div class="carousel-item">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
@@ -109,7 +95,7 @@
                         <p>Мы являемся единственным агентством в городе Владимир,
                             с помощью которого вы сможете подготовиться к одному из самых значимых дней в вашей жизни
                             максимально быстро и просто. Вы сможете просмотреть анкеты ведущих, фотографов и других
-                            помощников в организации праздников, общаться с ними напрямую. Сможете подобрать шоу-программу
+                            помощников в организации праздники, общаться с ними напрямую. Сможете подобрать шоу-программу
                             и даже заказать торт.</p>
                     </div>
                 </div>

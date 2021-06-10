@@ -2,12 +2,10 @@
   Created by IntelliJ IDEA.
   User: Сергей
   Date: 29.05.2021
-  Time: 21:50
+  Time: 21:59
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
     <title> Агенство по проведению праздников</title>
@@ -36,7 +34,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index">Главная</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link">Люди</a>
+                    <li class="nav-item"><a class="nav-link">Люди<i class="fa fa-angle-down"></i></a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="error">Ведущие</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Фотографы</a></li>
@@ -50,17 +48,13 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="error">Декор и флористика</a></li>
-                    <li class="nav-item"><a class="nav-link">Салоны</a>
-                        <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="error">Салон красоты</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="error">Салон красоты</a></li>
                     <li class="nav-item"><a class="nav-link">Музыка, танцы, шоу</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="error">Шоу-программы</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Музыкальное сопровождение</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Постановка танца</a></li>
+                            <li class="nav-item"><a class="nav-link" href="error">Шоу программа для взрослых</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="error">Транспорт</a></li>
@@ -68,16 +62,16 @@
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="entry">Вход</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/userRegistration">Регистрация клиента</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/organizatorRegistration">Регистрация организатора</a></li>
+                            <li class="nav-item"><a class="nav-link" href="userRegistration">Регистрация клиента</a></li>
+                            <li class="nav-item"><a class="nav-link" href="organizatorRegistration">Регистрация организатора</a></li>
                         </ul>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 </header>
+
 
 <main>
 
@@ -109,7 +103,7 @@
                         <p>Мы являемся единственным агентством в городе Владимир,
                             с помощью которого вы сможете подготовиться к одному из самых значимых дней в вашей жизни
                             максимально быстро и просто. Вы сможете просмотреть анкеты ведущих, фотографов и других
-                            помощников в организации праздников, общаться с ними напрямую. Сможете подобрать шоу-программу
+                            помощников в организации праздники, общаться с ними напрямую. Сможете подобрать шоу-программу
                             и даже заказать торт.</p>
                     </div>
                 </div>
@@ -124,6 +118,22 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Ошибка</h2>
+                <p>Необходимо зарегистритоваться</p>
+                <p><a class="btn btn-secondary" href="index">Вернуться на главную</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

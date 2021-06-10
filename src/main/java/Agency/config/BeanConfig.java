@@ -4,6 +4,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.sql.DataSource;
 
+import Agency.Controllers.UserController;
 import Agency.DAO.*;
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.springframework.context.annotation.Bean;
@@ -75,5 +76,10 @@ public class BeanConfig {
         return new UserDAO(
             commentRatingDAO()
         );
+    }
+
+    @Bean
+    public UserController userController() {
+        return new UserController();
     }
 }
