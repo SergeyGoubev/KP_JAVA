@@ -23,16 +23,25 @@ public class GuestsDAO {
 
 
     //Добавление нового гостя в базу данных
-    public void add(Guest guest) {
-        entityManager.merge(guest);
+    public int add(Guest guest) {
+        try {
+            return entityManager.merge(guest).getId();
+        } catch(Exception e) {
+            return -1;
+        }
+
     }
 
     //Удаление сущности гостя с указанным ID
-    public void delete(int id) {
-        Guest guest = (Guest) entityManager.createQuery("SELECT guest FROM guests guest WHERE guest.id =: id")
-            .setParameter("id", id)
-            .getSingleResult();
-
-        entityManager.remove(guest);
+    public int delete(int id) {
+        try {
+            Guest guest = (Guest) entityManager.createQuery("SELECT guest FROM guests guest WHERE guest.id =: id")
+                .setParameter("id", id)
+                .getSingleResult();
+            entityManager.remove(guest);
+            return 1;
+        } catch(Exception e) {
+            return -1;
+        }
     }
 }

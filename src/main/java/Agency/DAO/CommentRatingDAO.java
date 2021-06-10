@@ -15,8 +15,13 @@ public class CommentRatingDAO {
     private EntityManager entityManager;
 
     //Сохранение нового коммента в базу данных
-    public void add(CommentRating commentRating) {
-        entityManager.merge(commentRating);
+    public int add(CommentRating commentRating) {
+        try {
+            return entityManager.merge(commentRating).getId();
+        } catch(Exception e) {
+            return -1;
+        }
+
     }
 
     //Получение оценки по юзеру и организатору

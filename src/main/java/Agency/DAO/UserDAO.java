@@ -19,8 +19,12 @@ public class UserDAO {
     private final CommentRatingDAO commentRatingDAO;
 
     //Добавление нового пользователя
-    public void add(User user) {
-        entityManager.merge(user);
+    public int add(User user) {
+        try{
+             return entityManager.merge(user).getUserId();
+        } catch(Exception e) {
+            return -1;
+        }
     }
 
     //Получение всех пользователей заданной категории

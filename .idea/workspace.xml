@@ -21,35 +21,22 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:controller" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/MessageDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/ServicesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Orders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/TypeOfUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/config/BeanConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/CategoryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/CategoryDAO.java" afterDir="false" />
+    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="Дао и модель">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/CommentRatingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/CommentRatingDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/GuestsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/CommentRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/CommentRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/Guests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +52,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="deomore &lt;i1l2y3a40272000&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -181,8 +173,16 @@
       <updated>1623266172665</updated>
       <workItem from="1623266175777" duration="114000" />
       <workItem from="1623266305314" duration="8862000" />
-      <workItem from="1623279976934" duration="332000" />
+      <workItem from="1623279976934" duration="1662000" />
     </task>
+    <task id="LOCAL-00001" summary="Дао и модель">
+      <created>1623280522298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623280522298</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,12 +193,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Дао и модель" />
+    <option name="LAST_COMMIT_MESSAGE" value="Дао и модель" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1964" y="451" key="#Assign_Data_Sources" timestamp="1623270296545">
@@ -285,13 +302,21 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="885" y="201" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1623267359417" />
+    <state x="969" y="289" key="Vcs.Push.Dialog.v2" timestamp="1623280557841">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="969" y="289" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1623280557841" />
     <state x="1239" y="318" width="312" height="476" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1623266665323">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1239" y="318" width="312" height="476" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2752.1112@0.0.2752.1112" timestamp="1623266665323" />
-    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1623274589895">
+    <state x="1176" y="458" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1623280231079">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1623274589895" />
+    <state x="1176" y="458" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623280231079" />
+    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1623280225216">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1623280225216" />
   </component>
 </project>
