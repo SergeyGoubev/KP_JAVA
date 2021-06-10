@@ -30,7 +30,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="Дао и модель" />
+    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="Дао и модель">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/ServicesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/ServicesDao.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +194,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="controller" />
                       </list>
                     </value>
                   </entry>
@@ -291,6 +293,14 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1595" y="214" key="Maven.ArtifactSearchDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623268342211" />
+    <state x="131" y="144" key="MergeDialog" timestamp="1623284005139">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="131" y="144" key="MergeDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623284005139" />
+    <state x="866" y="242" width="745" height="728" key="MultipleFileMergeDialog" timestamp="1623284044255">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="866" y="242" width="745" height="728" key="MultipleFileMergeDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623284044255" />
     <state x="885" y="201" key="SettingsEditor" timestamp="1623267359417">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>

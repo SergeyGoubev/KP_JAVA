@@ -1,44 +1,118 @@
 package Agency.DAO;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
-import Agency.Models.Service;
-import lombok.Data;
+import Agency.Models.Services;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-@Data
+
 @Repository
-public class ServicesDao {
-    @PersistenceContext
-    private EntityManager entityManager;
+public class ServicesDAO {
+    static JdbcTemplate template;
+    private static final Logger logger= LoggerFactory.getLogger(ServicesDAO.class);
 
-    //Получение сервисов по id юзера
-    public List<Service> getServicesById(int userId) {
-        return entityManager.createQuery("SELECT service FROM services service WHERE service.user.userId =:userId")
-            .setParameter("userId", userId)
-            .getResultList();
+    public static List<Services> getServiceById(int userId) {
+        logger.info("Выполнение метода getServiceById для вывода списка услуг");
+        String Sql="select * from services where userId=" + userId;
+        try{
+            return template.query(Sql,new RowMapper<Services>(){
+                public Services mapRow(ResultSet rs, int row) throws SQLException {
+                    Services g =  new Services();
+                    g.setId(rs.getInt("id"));
+                    g.setName(rs.getString("name"));
+                    g.setDescription(rs.getString("description"));
+                    g.setCost(rs.getInt("costs"));
+                    return g;
+                }
+            });
+        }catch (Exception e) {
+            logger.error("Ошибка при выполнении метода getServiceById: ", e);
+            return null;
+        }
     }
 
 
-    //Получение всех сервисов
-    public List<Service> getAllServices() {
-        return entityManager.createQuery("SELECT service FROM services service")
-            .getResultList();
+    public List<Services> getAllServices(){
+        logger.info("Выполнение метода getAllServices для вывода всех сервисов");
+        try{
+            return template.query("select * from services",new RowMapper<Services>(){
+
+                public Services mapRow(ResultSet rs, int row) throws SQLException {
+                    Services s =  new Services();
+                    s.setUserId(rs.getInt("userId"));
+                    s.setName(rs.getString("name"));
+                    s.setDescription(rs.getString("description"));
+                    s.setCost(rs.getInt("costs"));
+                    return s;
+                }
+            });
+
+        }catch (Exception e){
+            logger.error("Ошибка при выполнении метода getAllServices: ", e);
+            return null;
+        }
     }
 
 
-    //Добавление сервиса
-    public void add(Service service) {
-        entityManager.merge(service);
+
+
+    /*   public List<Services> getServicesById(int Id){
+          logger.info("Выполнение метода getGuestsById для вывода списка сервисов");
+          String Sql="select * from services where Id=" + Id;
+          try{
+              return template.query(Sql,new RowMapper<Services>(){
+                  public Services mapRow(ResultSet rs, int row) throws SQLException {
+                      Services s =  new Services();
+                      s.setId(rs.getInt("id"));
+                      s.setName(rs.getString("name"));
+                      s.setDescription(rs.getString("description"));
+                      s.setCost(rs.getInt("costs"));
+                      return s;
+                  }
+              });
+          }catch (Exception e) {
+              logger.error("Ошибка при выполнении метода getServicesById: ", e);
+              return null;
+          }
+      }
+  */
+    public int insertServices(int Id, Services services){
+        logger.info("Выполнение метода insertGuest - добавление нового сервиса");
+        String query="insert into services(Id, userId, name, description, costs) values (?, ?, ?, ?,?)";
+        logger.info(query + services.getName());
+        Object[] params = {Id, services.getUserId(), services.getName(), services.getDescription(), services.getCost()};
+        int[] types = {Types.INTEGER, Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR};
+        try {
+            return template.update(query,params,types);
+        }catch (Exception e) {
+            logger.error("Ошибка при выполнении метода insertServices: ", e);
+            return -1;
+        }
     }
 
-    //Удаление сервиса по ID
-    public void delete(int id) {
-        Service service = (Service) entityManager.createQuery("SELECT service FROM services service WHERE service.id =:id")
-            .setParameter("id", id)
-            .getSingleResult();
-        entityManager.remove(service);
+    public int deleteGuest(int id){
+        logger.info("Выполнение метода delete - удаление сервиса");
+        String query="delete from services where id=?";
+        Object[] params = {id};
+        int[] types = {Types.INTEGER};
+        try {
+            return template.update(query,params,types);
+        }catch (Exception e) {
+            logger.error("Ошибка при выполнении метода delete: ", e);
+            return -1;
+        }
+    }
+
+
+
+    public void setTemplate(JdbcTemplate template) {
+        this.template = template;
     }
 }
