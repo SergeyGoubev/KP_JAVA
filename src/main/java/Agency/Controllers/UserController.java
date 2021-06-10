@@ -39,7 +39,7 @@ public class UserController {
     MessageDao messageDao;
 
     @Autowired
-    ServicesDao servicesDao;
+    ServicesDAO servicesDao;
 
     @ModelAttribute("userJSP")
     public User createUser() {

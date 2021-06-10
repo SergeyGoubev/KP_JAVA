@@ -66,8 +66,8 @@ public class BeanConfig {
     }
 
     @Bean
-    public ServicesDao servicesDao() {
-        return new ServicesDao();
+    public ServicesDAO servicesDao() {
+        return new ServicesDAO();
     }
 
     @Bean
