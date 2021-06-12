@@ -2,10 +2,12 @@ package Agency.Models;
 
 import javax.persistence.*;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity(name = "user")
-@Data
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,4 +46,9 @@ public class User {
     private String address;
 
     private String organizationName;
+
+    @Override
+    public String toString() {
+        return "ФИО: " + name + surname + "\n" + "Телефон: " + telephone;
+    }
 }

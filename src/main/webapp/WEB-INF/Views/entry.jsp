@@ -78,24 +78,30 @@
 <main class="main">
     <div class="container">
         <section id="content">
-            <form:form method="post" action="verifyUser">
+            <form method="post" action="${pageContext.request.contextPath}/entry">
                 <h1>Авторизация</h1>
                 <div>
-                    <form:input path="login" class="form-control" id="floatingInput" placeholder="Ivanov1234"/>
+                    <input name="login" class="form-control" id="floatingInput" placeholder="Ivanov1234"/>
                 </div>
                 <div>
-                    <form:input type="password" path="password" class="form-control" id="floatingPassword" placeholder="Password" />
+                    <input name="password" class="form-control" id="floatingPassword" placeholder="Password" />
                 </div>
                 <div>
                     <input type="submit" value="Вход" />
                     <a href="organizatorRegistration">Регистрация<br>организатора</a>
                     <a href="userRegistration">Регистрация<br>Пользователя</a>
                 </div>
-            </form:form><!-- form -->
-
+            </form><!-- form -->
+            <div>
+                ${test}
+            </div>
         </section><!-- content -->
     </div><!-- container -->
 </main>
+<h1>
+    ${daoTest.login} <br>
+    ${daoTest.password} <br>
+</h1>
 </body>
 </html>
 

@@ -1,12 +1,14 @@
 Agency\Controllers\UserController.class
 Agency\Models\User.class
 Agency\Models\Message.class
+Agency\security\UserDetailsServiceImpl.class
 Agency\Models\Guest.class
 Agency\DAO\MessageDao.class
 Agency\config\BeanConfig.class
 Agency\DAO\UserDAO.class
 Agency\Models\CommentRating.class
 Agency\Models\TypeOfUser.class
+Agency\config\SecurityConfig.class
 Agency\DAO\CommentRatingDAO.class
 Agency\DAO\GuestsDAO.class
 Agency\DAO\ServicesDAO.class

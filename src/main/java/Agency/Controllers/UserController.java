@@ -3,53 +3,48 @@ package Agency.Controllers;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.security.Principal;
+import java.time.LocalDateTime;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import Agency.DAO.*;
-import Agency.Models.Category;
-import Agency.Models.CommentRating;
-import Agency.Models.Guest;
-import Agency.Models.User;
+import Agency.Models.*;
+import lombok.RequiredArgsConstructor;
 import org.apache.commons.io.IOUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @SessionAttributes({"userJSP", "backRef"})   //Сессионные атрибуты для извлечения данных о пользователе после входа.
+@RequiredArgsConstructor
 public class UserController {
-
-    @Autowired
-    UserDAO userDao;
-
-    @Autowired
-    CategoryDAO categoryDao;
-
-    @Autowired
-    GuestsDAO guestsDao;
-
-    @Autowired
-    CommentRatingDAO commentRatingDao;
-
-    @Autowired
-    MessageDao messageDao;
-
-    @Autowired
-    ServicesDAO servicesDao;
+    private final UserDAO userDao;
+    private final CategoryDAO categoryDao;
+    private final GuestsDAO guestsDao;
+    private final CommentRatingDAO commentRatingDao;
+    private final MessageDao messageDao;
+    private final ServicesDAO servicesDao;
+    private final OrdersDao ordersDao;
 
     @ModelAttribute("userJSP")
     public User createUser() {
         return new User();
     }
 
-    @RequestMapping("/entry")      //открытие страницы входа
-    public String entry(Model m) {
+    @GetMapping(value = "/entry")      //открытие страницы входа
+    public String entry(Model m, @RequestParam(required = false) String error) {
+        if(error != null) {
+            m.addAttribute("daoTest", userDao.getByLogin("logintest"));
+            m.addAttribute("test", "wrong  data");
+            return "entry";
+        }
         m.addAttribute("command", new User());
-        return "Entry";
+        return "entry";
     }
 
     @RequestMapping("/userIndex")   //открытие главной страницы клиента после входа в систему
@@ -107,6 +102,11 @@ public class UserController {
         return "OrganizatorInfo";
     }
 
+    @RequestMapping(value = "/test")
+    public String test() {
+        return "test";
+    }
+
     @RequestMapping(value = "/Hosts/{category}")
     //просмотр списка организаторов по категориям и полуение навания категории и реализация кнопки Вернуться назад в заависимости от типа пользователя который вошел
     public String Hosts(@PathVariable int category, @ModelAttribute("userJSP") User user, Model m) {
@@ -149,7 +149,7 @@ public class UserController {
     //при нажати на кнопку Выход, сессия будет завершена и пользователь вернется на главную страницу, где не выполнен вход
     public String back(@ModelAttribute("userJSP") User user, SessionStatus sessionStatus) {
         sessionStatus.setComplete();
-        return "../../index";
+        return "index";
     }
 
     @RequestMapping(value = "/pageUserInfo")
@@ -182,10 +182,11 @@ public class UserController {
         return "PageOrganizator";
     }
 
-    @RequestMapping(value = "/newuser")  //добавление нового пользователя
+    @RequestMapping(value = "/newuser")//добавление нового пользователя
     public String newUser(@ModelAttribute("command") User user) {
+        user.setCategory(categoryDao.getById(1));
         int id = userDao.add(user);    //вызов метода insert
-        if(id != -1) return "redirect:/entry";  //возвращаем страницу входа
+        if(id != -1) return "entry";  //возвращаем страницу входа
         else return "redirect:/Error";
     }
 
@@ -226,8 +227,9 @@ public class UserController {
             return "redirect:/Error";
             //return new ModelAndView("index", "msg", "Error: " + e.getMessage());
         }
+        user.setCategory(categoryDao.getById(2));
         int id = userDao.add(user);
-        if(id != -1) return "redirect:/entry";
+        if(id != -1) return "entry";
         else return "redirect:/Error";
     }
 
@@ -251,6 +253,24 @@ public class UserController {
         return "Services";
     }
      */
+
+    @RequestMapping(value = "/order", method = RequestMethod.GET)
+    public ModelAndView orderForm() {
+        ModelAndView modelAndView = new ModelAndView("order");
+        modelAndView.addObject("organizators", userDao.getByCategory(2));
+        modelAndView.addObject("order", new Orders().setOrganizator(new User()));
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/order", method = RequestMethod.POST)
+    public ModelAndView createOrder(@RequestBody @ModelAttribute("order") Orders orders, Principal principal) {
+        orders.setDate(LocalDateTime.now());
+        orders.setUser(userDao.getByLogin(principal.getName()));
+        orders.setStatus("accepted");
+        orders.setOrganizator(userDao.getById(orders.getOrganizator().getUserId()));
+        ordersDao.add(orders);
+        return new ModelAndView("redirect:/userIndex");
+    }
 
     @RequestMapping("/error")   //возврат страницы с ошибкой
     public String viewUsers() {

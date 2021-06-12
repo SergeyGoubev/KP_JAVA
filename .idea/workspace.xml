@@ -25,19 +25,57 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:Dark_V.2.0.1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="Дропнул логер">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/OrdersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Agency/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/appconfig-security.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf373c03-f073-4e13-ad84-de6d35cc9431.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf373c03-f073-4e13-ad84-de6d35cc9431/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2021_4_04__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2021_4_04__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/78e85aad-b255-488d-824c-4f6a81d44c87.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/78e85aad-b255-488d-824c-4f6a81d44c87.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2021_4_04__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/config/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/Entry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/entry.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/Entry.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/Views/Entry.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/BeanConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/spring-servlet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/config/BeanConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/persistence.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -50,6 +88,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -94,6 +133,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IliyaCourse\KP_JAVA\src\main\resources\META-INF" />
+      <recent name="C:\IliyaCourse\KP_JAVA\src\main\webapp\WEB-INF\Views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Ilyuha" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.65" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="14">
@@ -182,6 +227,8 @@
       <workItem from="1623266175777" duration="114000" />
       <workItem from="1623266305314" duration="8862000" />
       <workItem from="1623279976934" duration="1662000" />
+      <workItem from="1623334965966" duration="13093000" />
+      <workItem from="1623440597313" duration="11594000" />
     </task>
     <task id="LOCAL-00001" summary="Дао и модель">
       <created>1623280522298</created>
@@ -214,7 +261,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Dark_V.2.0.1" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -238,78 +285,82 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1964" y="451" key="#Assign_Data_Sources/0.0.2752.1112@0.0.2752.1112" timestamp="1623270296545" />
-    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623285139435">
+    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623336940230">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623285139435" />
+    <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623336940230" />
+    <state x="494" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1623451467671">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="494" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.2752.1112@0.0.2752.1112" timestamp="1623451467671" />
     <state x="1244" y="199" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1623267848621">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1244" y="199" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.2752.1112@0.0.2752.1112" timestamp="1623267848621" />
-    <state width="1875" height="462" key="GridCell.Tab.0.bottom" timestamp="1623333723233">
+    <state width="2694" height="302" key="GridCell.Tab.0.bottom" timestamp="1623454281807">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623333723233" />
-    <state width="1875" height="462" key="GridCell.Tab.0.center" timestamp="1623333723233">
+    <state width="2694" height="302" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281807" />
+    <state width="2694" height="302" key="GridCell.Tab.0.center" timestamp="1623454281807">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623333723233" />
-    <state width="1875" height="462" key="GridCell.Tab.0.left" timestamp="1623333723233">
+    <state width="2694" height="302" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281807" />
+    <state width="2694" height="302" key="GridCell.Tab.0.left" timestamp="1623454281807">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623333723233" />
-    <state width="1875" height="462" key="GridCell.Tab.0.right" timestamp="1623333723233">
+    <state width="2694" height="302" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281807" />
+    <state width="2694" height="302" key="GridCell.Tab.0.right" timestamp="1623454281807">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623333723233" />
-    <state width="1875" height="462" key="GridCell.Tab.1.bottom" timestamp="1623333669131">
+    <state width="2694" height="302" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281807" />
+    <state width="1906" height="326" key="GridCell.Tab.1.bottom" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.1.center" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.1.center" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.1.left" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.1.left" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.1.right" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.1.right" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.2.bottom" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.2.bottom" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.2.center" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.2.center" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.2.left" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.2.left" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="462" key="GridCell.Tab.2.right" timestamp="1623333669131">
+    <state width="1906" height="326" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.2.right" timestamp="1623454281805">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="462" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623333669131" />
-    <state width="1875" height="109" key="GridCell.Tab.3.bottom" timestamp="1623285563670">
+    <state width="1906" height="326" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623454281805" />
+    <state width="1906" height="326" key="GridCell.Tab.3.bottom" timestamp="1623446058852">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="109" key="GridCell.Tab.3.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623285563670" />
-    <state width="1875" height="109" key="GridCell.Tab.3.center" timestamp="1623285563670">
+    <state width="1906" height="326" key="GridCell.Tab.3.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623446058852" />
+    <state width="1906" height="326" key="GridCell.Tab.3.center" timestamp="1623446058852">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="109" key="GridCell.Tab.3.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623285563670" />
-    <state width="1875" height="109" key="GridCell.Tab.3.left" timestamp="1623285563670">
+    <state width="1906" height="326" key="GridCell.Tab.3.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623446058852" />
+    <state width="1906" height="326" key="GridCell.Tab.3.left" timestamp="1623446058852">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="109" key="GridCell.Tab.3.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623285563670" />
-    <state width="1875" height="109" key="GridCell.Tab.3.right" timestamp="1623285563670">
+    <state width="1906" height="326" key="GridCell.Tab.3.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623446058852" />
+    <state width="1906" height="326" key="GridCell.Tab.3.right" timestamp="1623446058852">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1875" height="109" key="GridCell.Tab.3.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623285563670" />
+    <state width="1906" height="326" key="GridCell.Tab.3.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623446058852" />
     <state x="1595" y="214" key="Maven.ArtifactSearchDialog" timestamp="1623268342211">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -334,6 +385,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1239" y="318" width="312" height="476" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2752.1112@0.0.2752.1112" timestamp="1623266665323" />
+    <state x="1220" y="332" width="590" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1623454031105">
+      <screen x="0" y="0" width="2752" height="1112" />
+    </state>
+    <state x="1220" y="332" width="590" height="447" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623454031105" />
     <state x="1078" y="269" key="git4idea.branch.GitSmartOperationDialog" timestamp="1623334056974">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -342,9 +397,9 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1176" y="458" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623280231079" />
-    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1623280225216">
+    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1623452851017">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1623280225216" />
+    <state x="1038" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2752.1112@0.0.2752.1112" timestamp="1623452851017" />
   </component>
 </project>

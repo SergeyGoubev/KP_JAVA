@@ -79,7 +79,20 @@ public class BeanConfig {
     }
 
     @Bean
+    public OrdersDao ordersDao() {
+        return new OrdersDao();
+    }
+
+    @Bean
     public UserController userController() {
-        return new UserController();
+        return new UserController(
+            userDAO(),
+            categoryDAO(),
+            guestsDAO(),
+            commentRatingDAO(),
+            messageDao(),
+            servicesDao(),
+            ordersDao()
+        );
     }
 }

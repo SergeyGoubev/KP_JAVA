@@ -1011,7 +1011,7 @@
       <ColNames>userID</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="313" parent="288" name="ordersID">
+    <index id="313" parent="288" name="guests_orders_id_fk">
       <ColNames>ordersID</ColNames>
       <Type>btree</Type>
     </index>
@@ -1025,7 +1025,7 @@
       <RefTableName>user</RefTableName>
       <RefColNames>userId</RefColNames>
     </foreign-key>
-    <foreign-key id="316" parent="288" name="guests_ibfk_2">
+    <foreign-key id="316" parent="288" name="guests_orders_id_fk">
       <ColNames>ordersID</ColNames>
       <RefTableName>orders</RefTableName>
       <RefColNames>id</RefColNames>
@@ -1083,6 +1083,7 @@
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="328" parent="290" name="userId">
@@ -1245,7 +1246,7 @@
     </column>
     <column id="359" parent="293" name="password">
       <Position>11</Position>
-      <DataType>varchar(15)|0s</DataType>
+      <DataType>varchar(128)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="360" parent="293" name="email">
@@ -1260,7 +1261,7 @@
     </column>
     <column id="362" parent="293" name="image">
       <Position>14</Position>
-      <DataType>longblob|0s</DataType>
+      <DataType>tinyblob|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="363" parent="293" name="address">

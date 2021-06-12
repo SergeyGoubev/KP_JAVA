@@ -4,9 +4,11 @@ import java.time.LocalDateTime;
 import javax.persistence.*;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 @Entity(name = "orders")
 @Data
+@Accessors(chain = true)
 public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
