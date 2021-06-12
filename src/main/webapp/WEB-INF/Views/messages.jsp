@@ -17,19 +17,20 @@
     <div>
         <c:forEach items="${list}" var="item">
             <div>
-                ${message.message} <br>
-                ${message.data} <br>
-                ${message.userId}
+                <div>
+                    ${item.message}
+                </div>
+                <div>
+                    ${item.date}
+                </div>
+                <div>
+                    ${item.user.name} ${item.user.surname}
+                </div>
+            </div>
+            <div>
+                <a href="/message/write/${item.user.userId}">Ответить</a>
             </div>
         </c:forEach>
-    </div>
-    <div>
-        <form:form action="/send" method="post" modelAttribute="message">
-            <form:hidden path="organizatorId"/> <br/>
-           Текст:  <form:input path="message"/> <br/>
-           Id получателя: <form:input path="userId"/> <br/>
-            <input type="submit" value="Отправить" />
-        </form:form>
     </div>
 </body>
 </html>

@@ -65,7 +65,6 @@
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
                             <li class="nav-item"><a class="nav-link" href="pageUserInfo">${userJSP.name} ${userJSP.surname}</a></li>
-                            <li class="nav-item"><a class="nav-link" href="messages/${user.organizatorId}">Сообщения</a></li>
                             <li class="nav-item"><a class="nav-link" href="guests">Список гостей</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Учёт расходов</a></li>
                             <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
@@ -112,6 +111,14 @@
     </div>
 </main>
 
+<div>
+    <div>
+        <a href="/order">Сделать заказ</a>
+    </div>
+    <div>
+        <a href="/messages/${user.userId}">Просмотреть сообщения</a>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body>

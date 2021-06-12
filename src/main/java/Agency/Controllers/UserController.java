@@ -39,7 +39,6 @@ public class UserController {
     @GetMapping(value = "/entry")      //открытие страницы входа
     public String entry(Model m, @RequestParam(required = false) String error) {
         if(error != null) {
-            m.addAttribute("daoTest", userDao.getByLogin("logintest"));
             m.addAttribute("test", "wrong  data");
             return "entry";
         }
@@ -48,8 +47,11 @@ public class UserController {
     }
 
     @RequestMapping("/userIndex")   //открытие главной страницы клиента после входа в систему
-    public String userIndex() {
-        return "UserIndex";
+    public ModelAndView userIndex(Principal principal) {
+        User user = userDao.getByLogin(principal.getName());
+        ModelAndView modelAndView = new ModelAndView("UserIndex");
+        modelAndView.addObject("user", user);
+        return modelAndView;
     }
 
     @RequestMapping("/organizatorIndex")       //открытие главной страницы организатора после входа в систему
@@ -204,21 +206,6 @@ public class UserController {
         else return "redirect:/Error";
     }
 
-    @RequestMapping(value = "/verifyUser")  //проверка пользователя при входе
-    public String verifyUser(@ModelAttribute("command") User user, Model m) {
-        /*
-        User foundedUser = userDao.verifyUser(user);    //Выполнение метода verifyUser
-        if(foundedUser == null) return "redirect:/Error";
-        m.addAttribute("userJSP", foundedUser);
-        if(foundedUser.getTypeOfUser().getTypeOfUser() == 1) return "redirect:/userIndex";   //вход в зависимости от типа пользователя
-        if(foundedUser.getTypeOfUser().getTypeOfUser() == 2) return "redirect:/organizatorIndex";
-        if(foundedUser.getTypeOfUser().getTypeOfUser() == 3) return "redirect:/adminIndex";
-        return "redirect:/Error";
-
-         */
-        return null;
-    }
-
     @RequestMapping(value = "/neworganizator")  //добавление нового организатора
     public String newOrganizator(@ModelAttribute("command") User user, @RequestParam("image2") MultipartFile image) {
         try {
@@ -277,33 +264,44 @@ public class UserController {
         return "Error";
     }
 
-    /*
+
     @RequestMapping("/messages/{id}")
     public ModelAndView messages(@PathVariable("id") int id) {
         ModelAndView modelAndView = new ModelAndView("messages");
         List<Message> messages = messageDao.getAllMessagesOfOrganizator(id);
         modelAndView.addObject("list", messages);
-        Message newMessage = new Message();
-        newMessage.setUserId(id);
-        modelAndView.addObject("message", newMessage);
         return modelAndView;
-    }4
-
-    @RequestMapping("/send")
-    public ModelAndView send(@RequestBody @ModelAttribute("message") Message message) {
-        message.setDate(LocalDateTime.now());
-        messageDao.add(message);
-        return new ModelAndView("redirect:messages/" + message.getUser().getUserId());
     }
 
     @RequestMapping(value = "/services")     //просмотр списка услуг
     public String services(@ModelAttribute("userJSP") User user, Model m) {
         int userId = user.getUserId();
-        List<Services> list = servicesDao.getById(userId);
+        List<Service> list = servicesDao.getServicesById(userId);
         m.addAttribute("list", list);
-        m.addAttribute("command", new Services());
+        m.addAttribute("command", new Service());
         return "Services";
     }
 
-     */
+
+    @RequestMapping(value = "/message/write/{id}")
+    public ModelAndView writeForm(@PathVariable(name = "id") int id) {
+        ModelAndView modelAndView = new ModelAndView("messageForm");
+        User user = userDao.getById(id);
+        Message message = new Message();
+        message.setUser(user);
+        modelAndView.addObject("message", message);
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/send/{userId}")
+    public ModelAndView send(@RequestBody @ModelAttribute("message") Message message, Principal principal,
+                             @PathVariable(name = "userId") int userId) {
+        User organizator = userDao.getByLogin(principal.getName());
+        User user = userDao.getById(userId);
+        message.setDate(LocalDateTime.now());
+        message.setOrganizator(organizator);
+        message.setUser(user);
+        messageDao.add(message);
+        return new ModelAndView("redirect:/messages/"+organizator.getUserId());
+    }
 }

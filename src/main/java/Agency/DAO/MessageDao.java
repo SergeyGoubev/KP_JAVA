@@ -7,9 +7,11 @@ import javax.persistence.PersistenceContext;
 import Agency.Models.Message;
 import lombok.Data;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Data
 @Repository
+@Transactional
 public class MessageDao {
     @PersistenceContext
     private EntityManager entityManager;

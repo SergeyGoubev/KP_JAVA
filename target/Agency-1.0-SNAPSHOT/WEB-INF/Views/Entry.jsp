@@ -92,9 +92,6 @@
                     <a href="userRegistration">Регистрация<br>Пользователя</a>
                 </div>
             </form><!-- form -->
-            <div>
-                ${test}
-            </div>
         </section><!-- content -->
     </div><!-- container -->
 </main>
