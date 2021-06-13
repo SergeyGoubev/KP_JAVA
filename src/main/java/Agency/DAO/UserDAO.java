@@ -42,7 +42,7 @@ public class UserDAO {
             .setParameter("category", category)
             .getResultList();
 
-       // users.forEach(item -> item.setRating(commentRatingDAO.getRating(item.getUserId())));
+       // users.forEach(item -> item.setRating(commentRatingDAO.getRating(item.getUserId()).floatValue()));
         return users;
     }
 

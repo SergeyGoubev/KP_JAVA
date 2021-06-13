@@ -13,6 +13,10 @@ public class Guest {
 
     private String name;
 
+    private String surname;
+
+    private String comment;
+
     @ManyToOne
     @JoinColumn(name = "userID")
     private User user;

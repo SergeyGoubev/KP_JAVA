@@ -84,6 +84,11 @@ public class BeanConfig {
     }
 
     @Bean
+    public TypeOfUserDao typeOfUserDao() {
+        return new TypeOfUserDao();
+    }
+
+    @Bean
     public UserController userController() {
         return new UserController(
             userDAO(),
@@ -92,7 +97,8 @@ public class BeanConfig {
             commentRatingDAO(),
             messageDao(),
             servicesDao(),
-            ordersDao()
+            ordersDao(),
+            typeOfUserDao()
         );
     }
 }

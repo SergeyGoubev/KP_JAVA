@@ -1,5 +1,6 @@
 package Agency.DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -15,9 +16,13 @@ public class ServicesDAO {
 
     //Получение сервисов по id юзера
     public List<Service> getServicesById(int userId) {
-        return entityManager.createQuery("SELECT service FROM services service WHERE service.user.userId =:userId")
-            .setParameter("userId", userId)
-            .getResultList();
+        try {
+            return entityManager.createQuery("SELECT service FROM services service WHERE service.user.userId =:userId")
+                .setParameter("userId", userId)
+                .getResultList();
+        } catch(Exception e) {
+            return new ArrayList<>();
+        }
     }
 
 

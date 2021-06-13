@@ -92,13 +92,12 @@
                     <a href="userRegistration">Регистрация<br>Пользователя</a>
                 </div>
             </form><!-- form -->
+            <div>
+                ${errorMessage}
+            </div>
         </section><!-- content -->
     </div><!-- container -->
 </main>
-<h1>
-    ${daoTest.login} <br>
-    ${daoTest.password} <br>
-</h1>
 </body>
 </html>
 

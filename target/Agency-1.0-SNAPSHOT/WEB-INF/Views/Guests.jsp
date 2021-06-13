@@ -97,6 +97,13 @@
                     <td><form:input path="name"/></td>
                     <td><form:input path="surname"/></td>
                     <td><form:input path="comment"/></td>
+                    <td>
+                        <form:select path="order.id">
+                            <c:forEach items="${orders}" var="item">
+                                <form:option value="${item.id}"/>
+                            </c:forEach>
+                        </form:select>
+                    </td>
                     <td><input class="btn btn-outline-success" type="submit" value="Добавить" /></td>
                 </tr>
             </form:form>

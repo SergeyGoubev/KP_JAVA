@@ -94,8 +94,8 @@
             </div><!-- /.col-lg-4 -->
         </div>
     </div>
-    <div border="0" ${hidden}>
-        <form:form method="post" action="../comment/${user.userId}">
+    <div border="0">
+        <form:form method="post" action="/comment/${user.userId}" modelAttribute="newComment">
             <div class="form-floating">
                 <form:input path="comment" class="form-control" id="floatingInput" placeholder="Classno"/>
                 <label for="floatingInput">Комментарий</label>
@@ -116,7 +116,7 @@
                 <c:forEach var="commentRating" items="${list}">
                     <tr>
                         <td rowspan="2">${commentRating.mark}</td>
-                        <td>${commentRating.date} <a href="../userInfo/${commentRating.userId}">${commentRating.name} ${commentRating.surname}</a></td>
+                        <td>${commentRating.date} <a href="../userInfo/${commentRating.user.userId}">${commentRating.user.name} ${commentRating.user.surname}</a></td>
                     </tr>
                     <tr>
                         <td>${commentRating.comment}</td>

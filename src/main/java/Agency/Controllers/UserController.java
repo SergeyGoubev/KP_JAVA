@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.security.Principal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
@@ -30,16 +31,22 @@ public class UserController {
     private final MessageDao messageDao;
     private final ServicesDAO servicesDao;
     private final OrdersDao ordersDao;
+    private final TypeOfUserDao typeOfUserDao;
 
     @ModelAttribute("userJSP")
     public User createUser() {
         return new User();
     }
 
+    @GetMapping
+    public String index() {
+        return "index";
+    }
+
     @GetMapping(value = "/entry")      //открытие страницы входа
     public String entry(Model m, @RequestParam(required = false) String error) {
         if(error != null) {
-            m.addAttribute("test", "wrong  data");
+            m.addAttribute("errorMessage", "Неправильные логин или пароль");
             return "entry";
         }
         m.addAttribute("command", new User());
@@ -73,46 +80,21 @@ public class UserController {
 
     @RequestMapping(value = "/organizatorInfo/{id}")
     //просмотр страницы организатора и реализация кнопки вернуться на главную страницу в зависимости от типа пользователя
-    public String organizatorInfo(@PathVariable int id, @ModelAttribute("userJSP") User userjsp, Model m) {
-        User user = userDao.getById(id);  //Вывод организатора
-        List<CommentRating> list = commentRatingDao.getCommentsByOrgId(id); //вывод списка комментариев и оценок
-        int mark = commentRatingDao.getMark(id, userjsp.getUserId());
-        CommentRating commentRating = new CommentRating();
-        commentRating.setMark(5);
-        int type = userjsp.getTypeOfUser().getTypeOfUser();
-        if(mark > 0 || type != 1) m.addAttribute(
-            "hidden",
-            "hidden"
-        );   //если пользователь поставил комментарий, ему уже не доступна эта функция
-        else m.addAttribute("hidden", "");                               //комментарии может ставить только клиент
-        m.addAttribute("command", commentRating);
-        m.addAttribute("list", list);
-        if(user.getTypeOfUser().getTypeOfUser() == 2) {
-            float rating = commentRatingDao.getRating(id);
-            user.setRating(rating);
-        }
-        if(type == 1) {
-            m.addAttribute("backRef", "userIndex");
-        } else if(type == 2) {
-            m.addAttribute("backRef", "organizatorIndex");
-        } else if(type == 3) {
-            m.addAttribute("backRef", "adminIndex");
-        } else {
-            m.addAttribute("backRef", "Error");
-        }
-        m.addAttribute("user", user);
-        return "OrganizatorInfo";
-    }
-
-    @RequestMapping(value = "/test")
-    public String test() {
-        return "test";
+    public ModelAndView organizatorInfo(@PathVariable int id) {
+        ModelAndView modelAndView = new ModelAndView("OrganizatorInfo");
+        User user = userDao.getById(id);
+        CommentRating newCommentRating = new CommentRating();
+        modelAndView.addObject("newComment", newCommentRating);
+        List<CommentRating> commentRatingList = commentRatingDao.getCommentsByOrgId(id);
+        modelAndView.addObject("list", commentRatingList);
+        modelAndView.addObject("user", user);
+        return modelAndView;
     }
 
     @RequestMapping(value = "/Hosts/{category}")
     //просмотр списка организаторов по категориям и полуение навания категории и реализация кнопки Вернуться назад в заависимости от типа пользователя который вошел
-    public String Hosts(@PathVariable int category, @ModelAttribute("userJSP") User user, Model m) {
-        int type = user.getTypeOfUser().getTypeOfUser();
+    public ModelAndView Hosts(@PathVariable int category/*, @ModelAttribute("userJSP") User user, Model m*/) {
+       /* int type = user.getTypeOfUser().getTypeOfUser();
         if(type == 1) {
             m.addAttribute("backRef", "userIndex");
         } else if(type == 2) {
@@ -122,12 +104,21 @@ public class UserController {
         } else {
             m.addAttribute("backRef", "Error");
         }
-        List<User> list =
-            userDao.getByCategory(category);  //Вывод списка пользователей по категориям и вывод названия категории
-        Category cat = categoryDao.getById(category);
-        m.addAttribute("list", list);
-        m.addAttribute("cat", cat.getName());
-        return "Hosts";
+        */
+        Category ctg = categoryDao.getById(category);
+        List<User> list = new ArrayList<>();
+        ModelAndView modelAndView = new ModelAndView("Hosts");
+        //Вывод списка пользователей по категориям и вывод названия категории
+        if(ctg != null) {
+            list = userDao.getByCategory(category);
+            Category cat = categoryDao.getById(category);
+            modelAndView.addObject("list", list);
+            modelAndView.addObject("cat", cat.getName());
+        } else {
+            String errorMessage = "Таких услуг пока нет";
+            modelAndView.addObject("errorMessage", errorMessage);
+        }
+        return modelAndView;
     }
 
     @RequestMapping(value = "/getUserImage/{userId}")   //загрузка картинки при регистрации организатора
@@ -139,9 +130,11 @@ public class UserController {
     }
 
     @RequestMapping(value = "/guests")     //просмотр списка гостей
-    public String guests(@ModelAttribute("userJSP") User user, Model m) {
-        int userId = user.getUserId();
+    public String guests(Principal principal, Model m) {
+        int userId = (userDao.getByLogin(principal.getName())).getUserId();
         List<Guest> list = guestsDao.getGuestsById(userId);
+        List<Orders> orders = ordersDao.getAllOfUser(userId);
+        m.addAttribute("orders", orders);
         m.addAttribute("list", list);
         m.addAttribute("command", new Guest());
         return "Guests";
@@ -186,14 +179,17 @@ public class UserController {
 
     @RequestMapping(value = "/newuser")//добавление нового пользователя
     public String newUser(@ModelAttribute("command") User user) {
-        user.setCategory(categoryDao.getById(1));
+        user.setTypeOfUser(typeOfUserDao.getUser());
         int id = userDao.add(user);    //вызов метода insert
         if(id != -1) return "entry";  //возвращаем страницу входа
         else return "redirect:/Error";
     }
 
     @RequestMapping(value = "/newguest")  //добавление нового гостя
-    public String newGuest(@ModelAttribute("command") Guest guest, @ModelAttribute("userJSP") User user) {
+    public String newGuest(@ModelAttribute("command") Guest guest, Principal principal) {
+        User user = userDao.getByLogin(principal.getName());
+        guest.setUser(user);
+        guest.setOrder(ordersDao.getById(guest.getOrder().getId()));
         int id = guestsDao.add(guest);    //вызов метода insertGuest
         if(id != -1) return "redirect:/guests";  //возвращаем страницу входа
         else return "redirect:/Error";
@@ -214,7 +210,8 @@ public class UserController {
             return "redirect:/Error";
             //return new ModelAndView("index", "msg", "Error: " + e.getMessage());
         }
-        user.setCategory(categoryDao.getById(2));
+        user.setTypeOfUser(typeOfUserDao.getOrganizator());
+        user.setCategory(categoryDao.getById(user.getCategory().getId()));
         int id = userDao.add(user);
         if(id != -1) return "entry";
         else return "redirect:/Error";
@@ -222,14 +219,22 @@ public class UserController {
 
     @RequestMapping(value = "/comment/{orgId}")  //добавление комментария и оценки
     public String comment(
-        @PathVariable int orgId,
-        @ModelAttribute("userJSP") User user,
-        @ModelAttribute("command") CommentRating commentRating
+        @PathVariable(name = "orgId") int orgId,
+        Principal principal,
+        @ModelAttribute("newComment") CommentRating commentRating
     ) {
-        int userId = user.getUserId();
-        int id = commentRatingDao.add(commentRating);
-        if(id != -1) return "redirect:/pageOrganizatorInfo";
-        else return "redirect:/Error";
+        try {
+            User organizator = userDao.getById(orgId);
+            User user = userDao.getByLogin(principal.getName());
+            commentRating.setUser(user);
+            commentRating.setOrganizator(organizator);
+            commentRating.setDate(LocalDateTime.now());
+            commentRatingDao.deleteComment(user, organizator);
+            commentRatingDao.add(commentRating);
+            return "redirect:/pageOrganizatorInfo";
+        } catch(Exception e) {
+            return "redirect:/Error";
+        }
     }
 
 
@@ -253,7 +258,7 @@ public class UserController {
     public ModelAndView createOrder(@RequestBody @ModelAttribute("order") Orders orders, Principal principal) {
         orders.setDate(LocalDateTime.now());
         orders.setUser(userDao.getByLogin(principal.getName()));
-        orders.setStatus("accepted");
+        orders.setStatus("sent");
         orders.setOrganizator(userDao.getById(orders.getOrganizator().getUserId()));
         ordersDao.add(orders);
         return new ModelAndView("redirect:/userIndex");
@@ -273,13 +278,12 @@ public class UserController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/services")     //просмотр списка услуг
-    public String services(@ModelAttribute("userJSP") User user, Model m) {
-        int userId = user.getUserId();
-        List<Service> list = servicesDao.getServicesById(userId);
-        m.addAttribute("list", list);
-        m.addAttribute("command", new Service());
-        return "Services";
+    @RequestMapping(value = "/services/{id}")     //просмотр списка услуг
+    public ModelAndView services(@PathVariable(name = "id") int id) {
+        ModelAndView modelAndView = new ModelAndView("Services");
+        List<Service> services = servicesDao.getServicesById(id);
+        modelAndView.addObject("list", services);
+        return modelAndView;
     }
 
 
@@ -303,5 +307,42 @@ public class UserController {
         message.setUser(user);
         messageDao.add(message);
         return new ModelAndView("redirect:/messages/"+organizator.getUserId());
+    }
+
+    @RequestMapping("organizator/orders/{id}")
+    public ModelAndView ordersList(@PathVariable(name = "id") int id) {
+        ModelAndView modelAndView = new ModelAndView("orderList");
+        modelAndView.addObject("list", ordersDao.getAllOfOrganizator(id));
+        return modelAndView;
+    }
+
+    @RequestMapping("/organizator/orders/accept/{id}")
+    public ModelAndView acceptOrder(@PathVariable(name = "id") int id, Principal principal) {
+        User user = userDao.getByLogin(principal.getName());
+        Orders orders = ordersDao.getById(id);
+        orders.setStatus("accepted");
+        ordersDao.add(orders);
+        return new ModelAndView("redirect:/organizator/orders/"+user.getUserId());
+    }
+
+    @RequestMapping("/user/orders/{id}")
+    public ModelAndView userOrdersList(@PathVariable(name = "id") int id) {
+        ModelAndView modelAndView = new ModelAndView("userOrdersList");
+        modelAndView.addObject("list", ordersDao.getAllOfUser(id));
+        return modelAndView;
+    }
+
+    @RequestMapping("/user/orders/accept/{id}")
+    public ModelAndView approveOrder(@PathVariable(name = "id") int id, Principal principal) {
+        User user = userDao.getByLogin(principal.getName());
+        Orders orders = ordersDao.getById(id);
+        orders.setStatus("done");
+        ordersDao.add(orders);
+        return new ModelAndView("redirect:/user/orders/"+user.getUserId());
+    }
+
+    @RequestMapping("/403")
+    public String accessDeniedPage() {
+        return "403";
     }
 }

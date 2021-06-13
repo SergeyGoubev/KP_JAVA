@@ -7,9 +7,11 @@ import javax.persistence.PersistenceContext;
 import Agency.Models.Guest;
 import lombok.Data;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 @Data
+@Transactional
 public class GuestsDAO {
     @PersistenceContext
     private EntityManager entityManager;
@@ -24,11 +26,13 @@ public class GuestsDAO {
 
     //Добавление нового гостя в базу данных
     public int add(Guest guest) {
-        try {
-            return entityManager.merge(guest).getId();
-        } catch(Exception e) {
-            return -1;
-        }
+        //try {
+            int id = entityManager.merge(guest).getId();
+            int a = 2 + 2;
+            return id;
+       // } catch(Exception e) {
+       //     return -1;
+       // }
 
     }
 

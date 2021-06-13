@@ -76,7 +76,7 @@
 </header>
 
 <main class="form-signin">
-    <form:form method="post" action="neworganizator" enctype="multipart/form-data">
+    <form:form method="post" action="neworganizator" enctype="multipart/form-data" modelAttribute="command">
 
     <h1 class="h3 mb-3 fw-normal">Заполните данные для регистрации:</h1>
 
@@ -113,17 +113,17 @@
 
     <div class="form-floating">
 
-        <form:select path="category" class="form-control">
+        <form:select path="category.id" class="form-control">
             <option label="Ведущие" value="1" selected>Ведущие</option>
-            <option>Видеографы</option>
-            <option>Владелец ресторана</option>
-            <option>Кондитер</option>
-            <option>Дизайнер-флорист</option>
-            <option>Владелец салона красоты</option>
-            <option>Водитель</option>
-            <option>Владелец отеля</option>
-            <option>Танцор</option>
-            <option>Диджей</option>
+            <option value="2">Видеографы</option>
+            <option value="3">Владелец ресторана</option>
+            <option value="4">Кондитер</option>
+            <option value="5">Дизайнер-флорист</option>
+            <option value="6">Владелец салона красоты</option>
+            <option value="7">Водитель</option>
+            <option value="8">Владелец отеля</option>
+            <option value="9">Танцор</option>
+            <option value="10">Диджей</option>
         </form:select>
         <label for="floatingInput">Категория</label>
     </div>

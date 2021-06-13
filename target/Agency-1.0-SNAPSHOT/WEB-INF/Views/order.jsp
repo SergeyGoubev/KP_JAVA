@@ -22,7 +22,7 @@
                 Организатор:
                 <form:select path="organizator.userId">
                     <c:forEach items="${organizators}" var="item">
-                        <form:option value="${item.userId}" title="${item}"/>
+                        <form:option value="${item.userId}" title="${item.name} + ${item.surname}"/>
                     </c:forEach>
                 </form:select>
             </div>

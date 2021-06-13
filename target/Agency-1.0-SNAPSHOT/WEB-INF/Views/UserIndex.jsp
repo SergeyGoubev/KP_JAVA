@@ -112,11 +112,24 @@
 </main>
 
 <div>
-    <div>
-        <a href="/order">Сделать заказ</a>
-    </div>
+    <c:choose>
+        <c:when test="${user.typeOfUser.description == \"organizator\"}">
+            <div>
+                <a href="/organizator/orders/${user.userId}">Полученные заказы</a>
+            </div>
+        </c:when>
+        <c:otherwise>
+            <div>
+                <a href="/order">Сделать заказ</a>
+            </div>
+        </c:otherwise>
+    </c:choose>
     <div>
         <a href="/messages/${user.userId}">Просмотреть сообщения</a>
+    </div>
+    <div>
+        ${user.name} + ${user.surname} <br>
+        ${user.typeOfUser.description}
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

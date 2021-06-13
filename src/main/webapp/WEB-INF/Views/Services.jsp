@@ -67,7 +67,6 @@
                     <li class="nav-item"><a class="nav-link" href="../Hosts/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="../error">Мои заказы</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index">Выход</a></li>
                         </ul>
                     </li>
@@ -94,7 +93,7 @@
                         <tr>
                             <td>${services.name}</td>
                             <td>${services.description}</td>
-                            <td>${services.cost}</td>
+                            <td>${services.costs}</td>
                         </tr>
                     </c:forEach>
                 </c:when>

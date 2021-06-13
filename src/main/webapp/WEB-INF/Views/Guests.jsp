@@ -70,10 +70,7 @@
                     <li class="nav-item"><a class="nav-link" href="Hosts/9">Отели</a></li>
                     <li class="nav-item"><a class="nav-link">Личный кабинет</a>
                         <ul class="submenu">
-                            <li class="nav-item"><a class="nav-link" href="messages/${user.organizatorId}">Сообщения</a></li>
                             <li class="nav-item"><a class="nav-link" href="guests">Список гостей</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Учёт расходов</a></li>
-                            <li class="nav-item"><a class="nav-link" href="error">Мои заказы</a></li>
                             <li class="nav-item"><a class="nav-link" href="index">Выход</a></li>
                         </ul>
                     </li>
@@ -97,6 +94,13 @@
                     <td><form:input path="name"/></td>
                     <td><form:input path="surname"/></td>
                     <td><form:input path="comment"/></td>
+                    <td>
+                        <form:select path="order.id">
+                            <c:forEach items="${orders}" var="item">
+                                <form:option value="${item.id}"/>
+                            </c:forEach>
+                        </form:select>
+                    </td>
                     <td><input class="btn btn-outline-success" type="submit" value="Добавить" /></td>
                 </tr>
             </form:form>

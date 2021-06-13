@@ -21,7 +21,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         User user = userDAO.getByLogin(s);
         Set<GrantedAuthority> ga = new HashSet<>();
-        ga.add(new SimpleGrantedAuthority(user.getCategory().toString()));
+        ga.add(new SimpleGrantedAuthority(user.getTypeOfUser().getDescription()));
         return new org.springframework.security.core.userdetails.User(
             user.getLogin(),
             user.getPassword(),

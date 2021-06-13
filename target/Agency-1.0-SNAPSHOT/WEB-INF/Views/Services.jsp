@@ -94,7 +94,7 @@
                         <tr>
                             <td>${services.name}</td>
                             <td>${services.description}</td>
-                            <td>${services.cost}</td>
+                            <td>${services.costs}</td>
                         </tr>
                     </c:forEach>
                 </c:when>
