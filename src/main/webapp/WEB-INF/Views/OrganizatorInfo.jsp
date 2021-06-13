@@ -131,6 +131,9 @@
             </c:otherwise>
         </c:choose>
     </table>
+    <div>
+        <a href="/message/write/${user.userId}">Написать сообщение</a>
+    </div>
 </main>
 </body>
 </html>

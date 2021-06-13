@@ -150,9 +150,10 @@ public class UserController {
     @RequestMapping(value = "/pageUserInfo")
     //@PathVariable используется для работы с параметрами, передаваемыми через адрес запроса
     public String userInfo(
-        @ModelAttribute("userJSP") User user,
+        Principal principal,
         Model m
     ) {    //возможность клиента просматривать информацию о себе
+        User user = userDao.getByLogin(principal.getName());
         m.addAttribute("user", user);
         m.addAttribute("backRef", "userIndex");
         return "UserInfo";
@@ -225,6 +226,7 @@ public class UserController {
     ) {
         try {
             User organizator = userDao.getById(orgId);
+            userDao.addRating(commentRating.getMark(), organizator);
             User user = userDao.getByLogin(principal.getName());
             commentRating.setUser(user);
             commentRating.setOrganizator(organizator);

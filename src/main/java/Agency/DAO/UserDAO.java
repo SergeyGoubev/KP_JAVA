@@ -48,6 +48,12 @@ public class UserDAO {
 
 
     @Transactional
+    public void addRating(float rating, User user) {
+        user.setRating(user.getRating() + rating);
+        entityManager.merge(user);
+    }
+
+    @Transactional
     public User getByLogin(String login) {
         return (User) entityManager.createQuery("SELECT user FROM user user WHERE user.login =:login")
             .setParameter("login", login)
