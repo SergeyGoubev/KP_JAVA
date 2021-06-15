@@ -110,7 +110,7 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("Hosts");
         //Вывод списка пользователей по категориям и вывод названия категории
         if(ctg != null) {
-            list = userDao.getByRole(category);
+            list = userDao.getByCategory(category);
             Category cat = categoryDao.getById(category);
             modelAndView.addObject("list", list);
             modelAndView.addObject("cat", cat.getName());
@@ -302,13 +302,13 @@ public class UserController {
     @RequestMapping(value = "/send/{userId}")
     public ModelAndView send(@RequestBody @ModelAttribute("message") Message message, Principal principal,
                              @PathVariable(name = "userId") int userId) {
-        User organizator = userDao.getByLogin(principal.getName());
-        User user = userDao.getById(userId);
+        User sender = userDao.getByLogin(principal.getName());
+        User receiver = userDao.getById(userId);
         message.setDate(LocalDateTime.now());
-        message.setOrganizator(organizator);
-        message.setUser(user);
+        message.setUser(sender);
+        message.setOrganizator(receiver);
         messageDao.add(message);
-        return new ModelAndView("redirect:/messages/"+organizator.getUserId());
+        return new ModelAndView("redirect:/messages/"+sender.getUserId());
     }
 
     @RequestMapping("organizator/orders/{id}")

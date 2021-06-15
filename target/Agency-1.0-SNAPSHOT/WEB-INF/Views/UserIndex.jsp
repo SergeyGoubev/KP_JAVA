@@ -111,7 +111,7 @@
 
 <div>
     <c:choose>
-        <c:when test="${user.typeOfUser.description == \"organizator\"}">
+        <c:when test="${user.typeOfUser.description == \"ROLE_ORGANIZATOR\"}">
             <div>
                 <a href="/organizator/orders/${user.userId}">Полученные заказы</a>
             </div>

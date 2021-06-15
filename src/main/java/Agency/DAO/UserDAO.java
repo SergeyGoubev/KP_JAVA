@@ -1,5 +1,6 @@
 package Agency.DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -44,6 +45,17 @@ public class UserDAO {
 
        // users.forEach(item -> item.setRating(commentRatingDAO.getRating(item.getUserId()).floatValue()));
         return users;
+    }
+
+    @Transactional
+    public List<User> getByCategory(int category) {
+        try {
+            return entityManager.createQuery("SELECT user FROM user user WHERE user.category.id =:category")
+                .setParameter("category", category)
+                .getResultList();
+        } catch(Exception e) {
+            return new ArrayList<>();
+        }
     }
 
 

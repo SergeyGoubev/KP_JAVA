@@ -30,35 +30,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="исправление багов">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/MessageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/OrdersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/OrdersDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/ServicesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/ServicesDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/TypeOfUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/TypeOfUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/BeanConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/security/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/security/UserDetailsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/MessageDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/OrdersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/OrdersDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/ServicesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/ServicesDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/TypeOfUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/TypeOfUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Guest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Orders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/config/BeanConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Agency/security/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/security/UserDetailsServiceImpl.class" afterDir="false" />
+    <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="хот фикс">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agency/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/UserDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623609600226</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="хот фикс">
+      <created>1623773953945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623773953945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +278,8 @@
     <MESSAGE value="Контроллер" />
     <MESSAGE value="Заказы" />
     <MESSAGE value="исправление багов" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправление багов" />
+    <MESSAGE value="хот фикс" />
+    <option name="LAST_COMMIT_MESSAGE" value="хот фикс" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -316,54 +303,54 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1107" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623608418467" />
-    <state width="1906" height="392" key="GridCell.Tab.0.bottom" timestamp="1623773814706">
+    <state width="1906" height="392" key="GridCell.Tab.0.bottom" timestamp="1623774888838">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
-    <state width="1906" height="392" key="GridCell.Tab.0.center" timestamp="1623773814706">
+    <state width="1906" height="392" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888838" />
+    <state width="1906" height="392" key="GridCell.Tab.0.center" timestamp="1623774888838">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
-    <state width="1906" height="392" key="GridCell.Tab.0.left" timestamp="1623773814706">
+    <state width="1906" height="392" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888838" />
+    <state width="1906" height="392" key="GridCell.Tab.0.left" timestamp="1623774888838">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
-    <state width="1906" height="392" key="GridCell.Tab.0.right" timestamp="1623773814706">
+    <state width="1906" height="392" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888838" />
+    <state width="1906" height="392" key="GridCell.Tab.0.right" timestamp="1623774888838">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
-    <state width="1906" height="392" key="GridCell.Tab.1.bottom" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888838" />
+    <state width="1906" height="392" key="GridCell.Tab.1.bottom" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.1.center" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.1.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.1.center" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.1.left" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.1.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.1.left" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.1.right" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.1.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.1.right" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.2.bottom" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.1.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.2.bottom" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.2.center" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.2.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.2.center" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.2.left" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.2.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.2.left" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
-    <state width="1906" height="392" key="GridCell.Tab.2.right" timestamp="1623773008029">
+    <state width="1906" height="392" key="GridCell.Tab.2.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
+    <state width="1906" height="392" key="GridCell.Tab.2.right" timestamp="1623774888839">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008029" />
+    <state width="1906" height="392" key="GridCell.Tab.2.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623774888839" />
     <state width="1905" height="242" key="GridCell.Tab.3.bottom" timestamp="1623608067848">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -396,10 +383,10 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="885" y="201" key="SettingsEditor/0.0.2752.1112@0.0.2752.1112" timestamp="1623285144242" />
-    <state x="969" y="289" key="Vcs.Push.Dialog.v2" timestamp="1623609606677">
+    <state x="969" y="289" key="Vcs.Push.Dialog.v2" timestamp="1623773958939">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="969" y="289" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1623609606677" />
+    <state x="969" y="289" key="Vcs.Push.Dialog.v2/0.0.2752.1112@0.0.2752.1112" timestamp="1623773958939" />
     <state x="1239" y="318" width="312" height="476" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1623266665323">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
