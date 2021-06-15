@@ -120,6 +120,9 @@
             <div>
                 <a href="/order">Сделать заказ</a>
             </div>
+            <div>
+                <a href="/user/orders/${user.userId}">Мои заказы</a>
+            </div>
         </c:otherwise>
     </c:choose>
     <div>
