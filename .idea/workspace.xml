@@ -31,7 +31,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d40b556-d926-4f24-9e22-730d311b0191" name="Default Changelist" comment="исправление багов">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/OrdersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/OrdersDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/ServicesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/ServicesDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/TypeOfUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/DAO/TypeOfUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/BeanConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/security/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Agency-1.0-SNAPSHOT/WEB-INF/classes/Agency/security/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CategoryDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/CommentRatingDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/GuestsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/MessageDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/MessageDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/OrdersDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/OrdersDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/ServicesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/ServicesDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/DAO/TypeOfUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/DAO/TypeOfUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Guest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Guest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/config/BeanConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/config/BeanConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Agency/security/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Agency/security/UserDetailsServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,10 +296,10 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1964" y="451" key="#Assign_Data_Sources" timestamp="1623270296545">
+    <state x="1964" y="451" key="#Assign_Data_Sources" timestamp="1623773821454">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state x="1964" y="451" key="#Assign_Data_Sources/0.0.2752.1112@0.0.2752.1112" timestamp="1623270296545" />
+    <state x="1964" y="451" key="#Assign_Data_Sources/0.0.2752.1112@0.0.2752.1112" timestamp="1623773821454" />
     <state x="969" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623336940230">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
@@ -289,22 +316,22 @@
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
     <state x="1107" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2752.1112@0.0.2752.1112" timestamp="1623608418467" />
-    <state width="1906" height="392" key="GridCell.Tab.0.bottom" timestamp="1623773008028">
+    <state width="1906" height="392" key="GridCell.Tab.0.bottom" timestamp="1623773814706">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008028" />
-    <state width="1906" height="392" key="GridCell.Tab.0.center" timestamp="1623773008028">
+    <state width="1906" height="392" key="GridCell.Tab.0.bottom/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
+    <state width="1906" height="392" key="GridCell.Tab.0.center" timestamp="1623773814706">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008028" />
-    <state width="1906" height="392" key="GridCell.Tab.0.left" timestamp="1623773008028">
+    <state width="1906" height="392" key="GridCell.Tab.0.center/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
+    <state width="1906" height="392" key="GridCell.Tab.0.left" timestamp="1623773814706">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008028" />
-    <state width="1906" height="392" key="GridCell.Tab.0.right" timestamp="1623773008028">
+    <state width="1906" height="392" key="GridCell.Tab.0.left/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
+    <state width="1906" height="392" key="GridCell.Tab.0.right" timestamp="1623773814706">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
-    <state width="1906" height="392" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623773008028" />
+    <state width="1906" height="392" key="GridCell.Tab.0.right/0.0.2752.1112@0.0.2752.1112" timestamp="1623773814706" />
     <state width="1906" height="392" key="GridCell.Tab.1.bottom" timestamp="1623773008029">
       <screen x="0" y="0" width="2752" height="1112" />
     </state>
