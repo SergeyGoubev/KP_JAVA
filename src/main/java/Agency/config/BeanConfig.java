@@ -1,9 +1,5 @@
 package Agency.config;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.sql.DataSource;
-
 import Agency.Controllers.UserController;
 import Agency.DAO.*;
 import com.mysql.cj.jdbc.MysqlDataSource;
@@ -15,6 +11,10 @@ import org.springframework.orm.jpa.vendor.HibernateJpaDialect;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan("Agency")
@@ -36,7 +36,7 @@ public class BeanConfig {
     public DataSource dataSource() {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setUser("root");
-        dataSource.setPassword("yfgjktjy1813");
+        dataSource.setPassword("Z1s2e3z1s2e3");
         dataSource.setDatabaseName("agency");
         return dataSource;
     }
