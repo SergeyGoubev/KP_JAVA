@@ -37,9 +37,9 @@ public class UserDAO {
 
     //Получение всех пользователей заданной категории
     @Transactional
-    public List<User> getByCategory(int category) {
-        List<User> users = entityManager.createQuery("SELECT user FROM user user WHERE user.category.id =:category")
-            .setParameter("category", category)
+    public List<User> getByRole(int role) {
+        List<User> users = entityManager.createQuery("SELECT user FROM user user WHERE user.typeOfUser.typeOfUser =:role")
+            .setParameter("role", role)
             .getResultList();
 
        // users.forEach(item -> item.setRating(commentRatingDAO.getRating(item.getUserId()).floatValue()));

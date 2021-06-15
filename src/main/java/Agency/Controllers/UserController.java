@@ -110,7 +110,7 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("Hosts");
         //Вывод списка пользователей по категориям и вывод названия категории
         if(ctg != null) {
-            list = userDao.getByCategory(category);
+            list = userDao.getByRole(category);
             Category cat = categoryDao.getById(category);
             modelAndView.addObject("list", list);
             modelAndView.addObject("cat", cat.getName());
@@ -251,7 +251,7 @@ public class UserController {
     @RequestMapping(value = "/order", method = RequestMethod.GET)
     public ModelAndView orderForm() {
         ModelAndView modelAndView = new ModelAndView("order");
-        modelAndView.addObject("organizators", userDao.getByCategory(2));
+        modelAndView.addObject("organizators", userDao.getByRole(2));
         modelAndView.addObject("order", new Orders().setOrganizator(new User()));
         return modelAndView;
     }
